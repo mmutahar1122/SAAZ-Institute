@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- <title>eLEARNING - eLearning HTML Template</title> -->
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../../img/Untitled-3.svg">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="../lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+        #skills_container {
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .skill {
+            margin: 10px 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+        <div class="p-2">
+            <div>
+                <h2 class="text-center mt-3 border-2 border-bottom border-primary">SAAZ Skills Institute</h2>
+                    <div id="skills_container"></div>
+            </div>
+        </div>
+    <div id="footer"></div>
+
+    <script>
+        let category = ["M.S Office Management", "Graphic Designing", "WEB Development", "Diploma In Database Management System (DBMS)", "Diploma In Informatio Technology",
+            "Auto Cad 2D/3D", "Shopify", "Free Lancing", "Video Graphy", "Diploma In Financial Management", "E-Commerece", "Ethical Hacking", "CCNA With Ethical Hacking", "Desktop Application",
+            "Amazon Dropshipping", "Amazon VA", "Andriod Develpment", "Diploma In Librarianship", "Digital Marketing", "IELTS", "Python", "Diploma In Technical Management",
+            "Spoken English", "CCNP", "All Computer Languages (C/C++ etc)", "Search Engine Optimization (SEO)", "Electrical Diploma", "Electronic Diploma", "Guest Posting", "Word Press"
+        ];
+        const skillsContainer = document.getElementById("skills_container");
+
+        category.map((cour, i) => {
+            const skillDiv = document.createElement("div");
+            skillDiv.innerText = cour;
+            skillDiv.className = "skill";
+            skillsContainer.appendChild(skillDiv);
+            console.log(cour, i);
+        });
+    </script>
+
+    <script>
+        $("#navbar").load("../Navbar/index.html");
+        $("#footer").load("../../Footer/index.html");
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/wow/wow.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/waypoints/waypoints.min.js"></script>
+    <script src="../../lib/owlcarousel/owl.carousel.min.js"></script>
+</body>
+
+</html>
