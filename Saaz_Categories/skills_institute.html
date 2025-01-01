@@ -48,6 +48,16 @@
             border: 1px solid #ddd;
             background-color: #f9f9f9;
             font-family: Arial, sans-serif;
+            color: white;
+
+        }
+
+        #bg-red {
+            background-color: rgb(219, 6, 70);
+        }
+
+        #bg-primary {
+            background-color: rgb(4, 157, 184);
         }
     </style>
 </head>
@@ -55,34 +65,72 @@
 <body>
 
     <div id="navbar"></div>
-        <div class="p-2">
-            <div>
-                <h2 class="text-center mt-3 border-2 border-bottom border-primary">SAAZ Skills Institute</h2>
-                    <div id="skills_container"></div>
+    <div class="p-2 mt-lg-3 mt-1">
+        <div class="text-center ">
+            <h2 class="mt-3 border-2 border-bottom border-primary d-inline">SAAZ Skills Institute</h2>
+            <div id="skills_container" class="mt-2"></div>
+            <p id="detaile_container"></p>
+        </div>
+    </div>
+    <div class=" border border-danger" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="title"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p id="description">Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
             </div>
         </div>
+    </div>
     <div id="footer"></div>
 
     <script>
-        let category = ["M.S Office Management", "Graphic Designing", "WEB Development", "Diploma In Database Management System (DBMS)", "Diploma In Informatio Technology",
+        let category = ["M.S Office Management", "Graphic Designing", "WEB Development", "Diploma In Database Management System (DBMS)", "Diploma In Information Technology",
             "Auto Cad 2D/3D", "Shopify", "Free Lancing", "Video Graphy", "Diploma In Financial Management", "E-Commerece", "Ethical Hacking", "CCNA With Ethical Hacking", "Desktop Application",
             "Amazon Dropshipping", "Amazon VA", "Andriod Develpment", "Diploma In Librarianship", "Digital Marketing", "IELTS", "Python", "Diploma In Technical Management",
             "Spoken English", "CCNP", "All Computer Languages (C/C++ etc)", "Search Engine Optimization (SEO)", "Electrical Diploma", "Electronic Diploma", "Guest Posting", "Word Press"
         ];
-        const skillsContainer = document.getElementById("skills_container");
 
-        category.map((cour, i) => {
+        let desc = ["IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration"
+            , "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration"
+       ,"IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration"
+            , "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration"
+       ,"IN MS Office Managemenet there is three month duration","IN MS Office Managemenet there is three month duration"
+            
+        ];
+        const skillsContainer = document.getElementById("skills_container");
+        const detaileContainer = document.getElementById("detaile_container");
+        const title = document.getElementById("title");
+        const description = document.getElementById("description");
+        //    console.log(desc[0])
+        category.map((cours, i) => {
+            title.innerText = category[i];
+            description.innerText = desc[i];
+            console.log("description", desc[i]);
             const skillDiv = document.createElement("div");
-            skillDiv.innerText = cour;
+            skillDiv.innerText = cours;
             skillDiv.className = "skill";
+            skillDiv.id = i % 2 == 0 ? "bg-red" : "bg-primary";
+
+
             skillsContainer.appendChild(skillDiv);
-            console.log(cour, i);
+            // skillDiv.onclick()
+            // console.log(cour, i);
         });
     </script>
 
     <script>
         $("#navbar").load("../Navbar/index.html");
-        $("#footer").load("../../Footer/index.html");
+        $("#footer").load("../Footer/index.html");
     </script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -90,7 +138,7 @@
     <script src="../lib/wow/wow.min.js"></script>
     <script src="../lib/easing/easing.min.js"></script>
     <script src="../lib/waypoints/waypoints.min.js"></script>
-    <script src="../../lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
 </body>
 
 </html>
