@@ -42,7 +42,7 @@
 
         }
 
-        .skill {
+        .courses {
             margin: 10px 10px;
             padding: 10px;
             border: 1px solid #ddd;
@@ -72,7 +72,7 @@
             <p id="detaile_container"></p>
         </div>
     </div>
-    <div class=" border border-danger" tabindex="-1">
+    <div class="border border-danger d-flex justify-content-center align-items-center" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -100,7 +100,7 @@
             "Spoken English", "CCNP", "All Computer Languages (C/C++ etc)", "Search Engine Optimization (SEO)", "Electrical Diploma", "Electronic Diploma", "Guest Posting", "Word Press"
         ];
 
-        let desc = ["IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration"
+        let desc = ["IN MS Office Managemenet there is three month duration", "Graphic Designing", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration"
             , "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration"
        ,"IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration"
             , "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration"
@@ -112,20 +112,30 @@
         const title = document.getElementById("title");
         const description = document.getElementById("description");
         //    console.log(desc[0])
-        category.map((cours, i) => {
-            title.innerText = category[i];
+        // category.map((cours, i) => {
+        //     title.innerText = category[i];
+        //     description.innerText = desc[i];
+        //     console.log("description", desc[i]);
+        //     const skillDiv = document.createElement("div");
+        //     skillDiv.innerText = cours;
+        //     skillDiv.className = "skill";
+        //     skillDiv.id = i % 2 == 0 ? "bg-red" : "bg-primary";
+
+
+        //     skillsContainer.appendChild(skillDiv);
+        //     // skillDiv.onclick()
+        //     // console.log(cour, i);
+        // });
+
+        category.map((cours,index)=>{
+            console.log(cours)
+            skillsContainer.innerHTML += `<button class="courses" id=${index % 2 == 0 ? "bg-red" : "bg-primary"} onclick="showDetails(${index})">${cours}</button>`
+        })
+
+        const showDetails=(i)=>{
+            title.innerText = category[i]
             description.innerText = desc[i];
-            console.log("description", desc[i]);
-            const skillDiv = document.createElement("div");
-            skillDiv.innerText = cours;
-            skillDiv.className = "skill";
-            skillDiv.id = i % 2 == 0 ? "bg-red" : "bg-primary";
-
-
-            skillsContainer.appendChild(skillDiv);
-            // skillDiv.onclick()
-            // console.log(cour, i);
-        });
+        }
     </script>
 
     <script>

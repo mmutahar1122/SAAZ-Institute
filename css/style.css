@@ -4,7 +4,9 @@
     --light: #F0FBFC;
     --dark: #181d38;
 }
-
+.b{
+    border: 2px solid rgb(236, 3, 3);
+}
 .fw-medium {
     font-weight: 600 !important;
 }
