@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>SAAZ Skills Institute & Academy</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Remove the base tag or modify if necessary -->
+    <!-- <base href="./index.html"> -->
+
+    <!-- Fix jQuery script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+    <div id="navbar"></div>
+    <h1>Welcome to School</h1>
+    <div class="text-center w-100">
+        <input type="number" name="" id="rollNo" placeholder="Enter your Roll No" class="b p-2" style="height: 50px;" onchange="findResult(event)">
+    </div>
+    <table id="res_table">
+    </table>
+    <div id="footer"></div>
+
+    <script>
+        const students = [
+            { name: "Alice Johnson", rollNo: 1, degreeName: "Computer Science" },
+            { name: "Bob Smith", rollNo: 2, degreeName: "Mechanical Engineering" },
+            { name: "Charlie Davis", rollNo: 3, degreeName: "Electrical Engineering" },
+            { name: "Diana Ross", rollNo: 4, degreeName: "Civil Engineering" },
+            { name: "Ethan Wright", rollNo: 5, degreeName: "Business Administration" },
+            { name: "Fiona Clark", rollNo: 6, degreeName: "Software Engineering" },
+            { name: "George Miller", rollNo: 7, degreeName: "Information Technology" },
+            { name: "Hannah Scott", rollNo: 8, degreeName: "Mathematics" },
+            { name: "Ian Walker", rollNo: 9, degreeName: "Physics" },
+            { name: "Julia Roberts", rollNo: 10, degreeName: "Biotechnology" }
+        ];
+
+        const table = document.getElementById("res_table");
+        const rollNoInput = document.getElementById('rollNo');
+
+        students.forEach(stu => {
+            table.innerHTML += `<tr><td>${stu.rollNo}</td><td>${stu.name}</td><td>${stu.degreeName}</td></tr>`;
+        });
+
+        const findResult = (event) => {
+            const rollNoValue = event.target.value;
+            const student = students.find(stu => stu.rollNo == rollNoValue);
+
+            if (student) {
+                console.log(student);  
+                alert(`Name: ${student.name}\nDegree: ${student.degreeName}`);
+            // table.innerHTML += `<tr><td>${stu.rollNo}</td><td>${stu.name}</td><td>${stu.degreeName}</td></tr>`;
+
+            } else {
+                console.log('No student found with roll number ' + rollNoValue);
+                alert('No student found with this Roll No');
+            }
+        };
+    </script>
+
+    <script>
+        $("#navbar").load("../Navbar/index.html");
+        $("#footer").load("../Footer/index.html");
+    </script>
+</body>
+</html>
