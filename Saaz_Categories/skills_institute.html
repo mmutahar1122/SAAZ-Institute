@@ -59,7 +59,25 @@
         #bg-primary {
             background-color: rgb(4, 157, 184);
         }
-    </style>
+        .Desplay_data {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* z-index: 9999; */
+    /* background-color: white;
+    padding: 20px;
+    border-radius: 10px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#modal{
+    z-index: 9999;
+}
+        .Modal_Hidden{
+            display: none;
+        }
+        </style>
 </head>
 
 <body>
@@ -72,25 +90,23 @@
             <p id="detaile_container"></p>
         </div>
     </div>
-    <div class="border border-danger d-flex justify-content-center align-items-center" tabindex="-1">
-        <div class="modal-dialog">
+    <div id="modal" class="position-fixed top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center shadow d-none">
+        <div class="modal-dialog" style="min-width: 300px;">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="title"></h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
                 </div>
                 <div class="modal-body">
-                    <p id="description">Modal body text goes here.</p>
+                    <p id="description"></p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="dis_Hidden()">Close</button>
                     <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                 </div>
             </div>
         </div>
     </div>
+    
     <div id="footer"></div>
 
     <script>
@@ -100,11 +116,36 @@
             "Spoken English", "CCNP", "All Computer Languages (C/C++ etc)", "Search Engine Optimization (SEO)", "Electrical Diploma", "Electronic Diploma", "Guest Posting", "Word Press"
         ];
 
-        let desc = ["IN MS Office Managemenet there is three month duration", "Graphic Designing", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration"
-            , "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration"
-       ,"IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration"
-            , "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration", "IN MS Office Managemenet there is three month duration"
-       ,"IN MS Office Managemenet there is three month duration","IN MS Office Managemenet there is three month duration"
+        let desc = ["IN MS Office Managemenet there is three month duration", 
+        "Graphic Designing", 
+        "website development offers numerous benefits for businesses, including increased online presence, improved credibility, and enhanced customer engagement.",
+        "A Database Management System (DBMS) is a software system that allows you to define, create, maintain, and manipulate databases."
+            , "IN MS Office Managemenet there is three month duration", 
+            "AutoCAD is a popular computer-aided design (CAD) software used for creating, modifying, and analyzing digital models.", 
+            "IN MS Office Managemenet there is three month duration", 
+            "IN MS Office Managemenet there is three month duration", 
+            "Videography, the art of capturing and editing video content, has a vast scope and numerous benefits across various industries.", 
+            "IN MS Office Managemenet there is three month duration", 
+            "E-commerce, also known as electronic commerce, refers to the buying and selling of goods and services over the internet. The scope and benefits of e-commerce are vast and continue to grow.", 
+            "IN MS Office Managemenet there is three month duration", 
+            "IN MS Office Managemenet there is three month duration", 
+            "IN MS Office Managemenet there is three month duration"
+       ,"IN MS Office Managemenet there is three month duration", 
+       "IN MS Office Managemenet there is three month duration",
+        "IN MS Office Managemenet there is three month duration", 
+        "IN MS Office Managemenet there is three month duration",
+         "Digital marketing has become an essential tool for businesses and organizations to reach their target audience, build their brand, and drive sales.", 
+            "IN MS Office Managemenet there is three month duration", 
+            "IN MS Office Managemenet there is three month duration", 
+            "IN MS Office Managemenet there is three month duration",
+             "IN MS Office Managemenet there is three month duration", 
+             "IN MS Office Managemenet there is three month duration",
+            "IN MS Office Managemenet there is three month duration", 
+            "Search Engine Optimization (SEO) is the process of improving the visibility and ranking of a website in search engine results pages (SERPs) through various techniques and strategies.", 
+            "IN MS Office Managemenet there is three month duration", 
+            "IN MS Office Managemenet there is three month duration"
+       ,"IN MS Office Managemenet there is three month duration",
+       "IN MS Office Managemenet there is three month duration"
             
         ];
         const skillsContainer = document.getElementById("skills_container");
@@ -129,12 +170,21 @@
 
         category.map((cours,index)=>{
             console.log(cours)
-            skillsContainer.innerHTML += `<button class="courses" id=${index % 2 == 0 ? "bg-red" : "bg-primary"} onclick="showDetails(${index})">${cours}</button>`
+            skillsContainer.innerHTML += `<button class="courses" id=${index % 2 == 0 ? "bg-red" : "bg-primary"} onclick="DisplayData(); showDetails(${index})">${cours}</button>`
         })
+        const modal = document.getElementById('modal');
 
+        const DisplayData=()=>{
+            modal.className = "Desplay_data";
+            console.log("working")
+        }
         const showDetails=(i)=>{
-            title.innerText = category[i]
+            console.log("i",i)
+            title.innerText = category[i];
             description.innerText = desc[i];
+        }
+        const dis_Hidden=()=>{
+           modal.className = "Modal_Hidden"
         }
     </script>
 
