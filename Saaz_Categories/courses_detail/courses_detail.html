@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <title>Document</title> -->
+    <link rel="icon" type="image/svg+xml" href="../../img/Untitled-3.svg" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      .navigate_arrow {
+        cursor: pointer;
+        padding: 10px;
+      }
+      .top_bar {
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.75);
+      }
+      .b {
+        border: 2px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shadow top_bar">
+      <div class="">
+        <i
+          class="fa fa-md-3x fa-2x fa-arrow-left navigate_arrow"
+          aria-hidden="true"
+          onclick="goBack()"
+        ></i>
+      </div>
+    </div>
+    <h1 class="" id="course_name"></h1>
+    <h3 id="course_detail"></h3>
+
+    <script>
+      const curse = document.getElementById("course_name");
+      const detail = document.getElementById("course_detail");
+
+      const urlParams = new URLSearchParams(window.location.search);
+      const category = urlParams.get("category");
+      const desc = urlParams.get("desc");
+
+      if (category && desc) {
+
+        curse.innerHTML = category;
+        detail.innerHTML = desc;
+
+        console.log("Received data:", decodeURIComponent(data));
+      } else {
+        // console.log("urlParams", urlParams);
+        console.log("data not received");
+      }
+
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+  </body>
+</html>
