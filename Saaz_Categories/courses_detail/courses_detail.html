@@ -20,8 +20,16 @@
         align-items: center;
         box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.75);
       }
+      #course_detail{
+        line-height: 1.5rem;
+      }
       .b {
         border: 2px solid red;
+      }
+      .detaile_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
     </style>
   </head>
@@ -35,9 +43,10 @@
         ></i>
       </div>
     </div>
+    <div class="detaile_container">
     <h1 class="" id="course_name"></h1>
-    <h3 id="course_detail"></h3>
-
+    <p id="course_detail"></p>
+  </div>
     <script>
       const curse = document.getElementById("course_name");
       const detail = document.getElementById("course_detail");
