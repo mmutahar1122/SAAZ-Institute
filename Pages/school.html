@@ -60,15 +60,7 @@
         <!-- <button>find Result</button> -->
     </div>
     <div class="d-flex w-100 justify-content-center p-2 mt-2">
-    <table id="res_table" class="w-75 text-center">
-        <thead>
-            <tr>
-            <td>Roll No</td>
-            <td>Name</td>
-            <td>Degree</td>
-        </tr>
-        </thead>
-    </table>
+    <table id="res_table" class="w-75 text-center"></table>
 </div>
     <div id="footer"></div>
 
@@ -104,7 +96,7 @@
 
       const renderTable = (data) => {
         table.innerHTML= "";
-        data.forEach((stu) => {
+        data?.forEach((stu) => {
           const row = `<tr><td>${stu.rollNo}</td><td>${stu.name}</td><td>${stu.degreeName}</td></tr>`;
           table.innerHTML += row;
         });
@@ -118,15 +110,13 @@
 
           const getResult = ()=>{
             const filteredStudents = students.filter(stu => stu.rollNo === rollNo);
-            console.log("filteredStudents1",filteredStudents)
           
-          if(!isNaN(rollNo) && filteredStudents.length > 0){
+          if(!isNaN(rollNo) && filteredStudents?.length > 0){
               alert("Student Exist");
               renderTable(filteredStudents)
-              console.log("filterStudents",filteredStudents);
             }
             else if(isNaN(rollNo)){
-              renderTable(students);
+              renderTable();
                 alert("Please Enter Roll No");
             }
             else{
@@ -134,7 +124,6 @@
                 table.innerHTML= `<tr><td>No Student Found</td></tr>`
             }
           }
-        renderTable(students);
 
     </script>
 
