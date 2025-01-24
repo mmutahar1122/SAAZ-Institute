@@ -79,34 +79,22 @@
 
       const renderTable = (data) => { 
 table.innerHTML = "";
-        data.forEach((stu)=>{
+        data?.forEach((stu)=>{
 table.innerHTML += `<tr> <td>${stu.rollNo}</td> <td>${stu.name}</td> <td>${stu.degreeName}</td> </tr>`
       })
     }
-<<<<<<< HEAD
 // renderTable(students);
-=======
-renderTable(students);
 let rollNo = '';
->>>>>>> a456941fb35dbd3b1626015da257970eb2cb1231
       const findResult=(event)=>{
-        console.log("type",typeof(event.target.value))
        rollNo = parseInt(event.target.value);  
       }
 const getResult=()=>{
         const filteredData = students.filter((stu) => stu.rollNo === rollNo );
-        console.log("filteredData",filteredData)
-        if(filteredData.length > 0 && !isNaN(rollNo)){
+        if(filteredData?.length > 0 && !isNaN(rollNo)){
             renderTable(filteredData);
         }
-<<<<<<< HEAD
-        else if(filteredData.length == 0 && isNaN(rollNo)){
-            alert("Student Dosent Exist");
-        }
-    }
-=======
         else if(isNaN(rollNo)){
-              renderTable(students);
+              renderTable();
                 alert("Please Enter Roll No");
             }
             else{
@@ -114,7 +102,6 @@ const getResult=()=>{
                 table.innerHTML= `<tr><td>No Student Found</td></tr>`
             }
       }
->>>>>>> a456941fb35dbd3b1626015da257970eb2cb1231
     </script>
 
     <script>
