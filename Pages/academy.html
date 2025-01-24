@@ -29,7 +29,7 @@
 </head>
 <body>
     <div id="navbar"></div>
-     <div class="text-center w-100 mt-4">
+    <div class=" px-2 d-flex justify-content-center align-items-center text-center w-100 mt-4">
         <input
           type="number"
           name=""
@@ -38,9 +38,12 @@
           class="p-2"
           style="height: 50px"
           onchange="findResult(event)"/>
+          <div class="p-2 bg-primary" style="height: 50px; width: 50px;"  onclick="getResult()">
+            <i class="fa fa-2x fa-search text-white" aria-hidden="true"></i>
+          </div>
       </div>
      <div class="d-flex w-100 justify-content-center p-2 mt-2">
-        <table id="res_table" class="w-75 text-center">
+       <table id="res_table" class="w-75 text-center">
            
         </table>
     </div>
@@ -80,20 +83,38 @@ table.innerHTML = "";
 table.innerHTML += `<tr> <td>${stu.rollNo}</td> <td>${stu.name}</td> <td>${stu.degreeName}</td> </tr>`
       })
     }
+<<<<<<< HEAD
 // renderTable(students);
+=======
+renderTable(students);
+let rollNo = '';
+>>>>>>> a456941fb35dbd3b1626015da257970eb2cb1231
       const findResult=(event)=>{
         console.log("type",typeof(event.target.value))
-        const rollNo = parseInt(event.target.value);  
-
+       rollNo = parseInt(event.target.value);  
+      }
+const getResult=()=>{
         const filteredData = students.filter((stu) => stu.rollNo === rollNo );
         console.log("filteredData",filteredData)
         if(filteredData.length > 0 && !isNaN(rollNo)){
             renderTable(filteredData);
         }
+<<<<<<< HEAD
         else if(filteredData.length == 0 && isNaN(rollNo)){
             alert("Student Dosent Exist");
         }
     }
+=======
+        else if(isNaN(rollNo)){
+              renderTable(students);
+                alert("Please Enter Roll No");
+            }
+            else{
+                alert("No Any Student With This Roll No");
+                table.innerHTML= `<tr><td>No Student Found</td></tr>`
+            }
+      }
+>>>>>>> a456941fb35dbd3b1626015da257970eb2cb1231
     </script>
 
     <script>
