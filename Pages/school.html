@@ -44,7 +44,7 @@
   </head>
   <body>
     <div id="navbar"></div>
-    <div class="text-center w-100 mt-4">
+    <div class="d-flex justify-content-center align-items-center text-center w-100 mt-4">
       <input
         type="number"
         name=""
@@ -52,7 +52,12 @@
         placeholder="Enter your Roll No"
         class="p-2"
         style="height: 50px"
-        onchange="findResult(event)"/>
+        onchange="findResult(event)"
+        />
+        <div class="p-2 bg-primary" style="height: 50px; width: 50px;"  onclick="getResult()">
+          <i class="fa fa-2x fa-search text-white" aria-hidden="true"></i>
+        </div>
+        <!-- <button>find Result</button> -->
     </div>
     <div class="d-flex w-100 justify-content-center p-2 mt-2">
     <table id="res_table" class="w-75 text-center">
@@ -105,11 +110,15 @@
         });
       };
       
-      
-      const findResult=(data) => {
-          const rollNo = parseInt(data.target.value);
-          const filteredStudents = students.filter(stu => stu.rollNo === rollNo);
-          console.log("filteredStudents1",filteredStudents)
+      let rollNo='';
+      const findResult=(e) => {
+           rollNo = parseInt(e.target.value);
+      }
+        
+
+          const getResult = ()=>{
+            const filteredStudents = students.filter(stu => stu.rollNo === rollNo);
+            console.log("filteredStudents1",filteredStudents)
           
           if(!isNaN(rollNo) && filteredStudents.length > 0){
               alert("Student Exist");
@@ -117,13 +126,14 @@
               console.log("filterStudents",filteredStudents);
             }
             else if(isNaN(rollNo)){
+              renderTable(students);
                 alert("Please Enter Roll No");
             }
             else{
                 alert("No Any Student With This Roll No");
                 table.innerHTML= `<tr><td>No Student Found</td></tr>`
             }
-        };
+          }
         renderTable(students);
 
     </script>
