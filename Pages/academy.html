@@ -80,7 +80,7 @@ table.innerHTML = "";
 table.innerHTML += `<tr> <td>${stu.rollNo}</td> <td>${stu.name}</td> <td>${stu.degreeName}</td> </tr>`
       })
     }
-renderTable(students);
+// renderTable(students);
       const findResult=(event)=>{
         console.log("type",typeof(event.target.value))
         const rollNo = parseInt(event.target.value);  
@@ -89,6 +89,9 @@ renderTable(students);
         console.log("filteredData",filteredData)
         if(filteredData.length > 0 && !isNaN(rollNo)){
             renderTable(filteredData);
+        }
+        else if(filteredData.length == 0 && isNaN(rollNo)){
+            alert("Student Dosent Exist");
         }
     }
     </script>
