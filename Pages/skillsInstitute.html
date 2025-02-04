@@ -12,13 +12,161 @@
     <base href="./index.html">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <style>
+        #input_field {
+          width: 300px;
+          height: 50px;
+          font-size: large;
+        }
+        #res_table tr,
+        #res_table td {
+          border: 1px solid black;
+        }
+        #res_table tr {
+          height: 50px;
+        }
+        #certificate_img {
+          height: 100%;
+          width: 100%;
+          /* background-position: center; */
+          border: 1px solid red;
+        }
+        #img_container{
+            padding: 5px;
+        }
+        #course_selection{
+          width: 300px;
+          height: 50px;
+          font-size: large;
+        }
+      </style>
 </head>
 <body>
     <div id="navbar"></div>
-     <h1>welcome to skills Institute</h1>
+     <!-- <h1>welcome to skills Institute</h1> -->
+     <div
+      class="d-flex justify-content-center align-items-center text-center w-100 mt-4 gap-2"
+    >
+    <select name="" id="course_selection"   class="p-2" onchange="getValue()">
+      <option value="Amazon" >Amazon</option>
+      <option value="Web Development">Web Development</option>
+      <option value="Video Graphy">Video Graphy</option>
+      <option value="Graphic Designing">Graphic Designing</option>
+      <option value="Auto Cad 2d/3d">Auto Cad 2d/3d</option>
+     </select>
+      <input
+        type="number"
+        name=""
+        id="input_field"
+        placeholder="Enter your Roll No"
+        class="p-2"
+        style="height: 50px"
+        onchange="findResult(event)"
+      />
+    
+      <div
+        class="p-2 bg-primary"
+        style="height: 50px; width: 50px"
+        onclick="getResult()"
+      >
+        <i class="fa fa-2x fa-search text-white" aria-hidden="true"></i>
+      </div>
+      <!-- <button>find Result</button> -->
+    </div>
+    <div class="d-flex w-100 justify-content-center p-2 mt-2">
+      <table id="res_table" class="w-75 text-center"></table>
+    </div>
     <div id="footer"></div>
-
+    <script>
+let courseSelected = '';
+      const getValue=()=>{
+         courseSelected = document.getElementById("course_selection").value;
+        }
+        // console.log("courseSElection-=-",)
+        const students = [
+          {
+            name: "Muhammad Mutahar",
+            rollNo: 1,
+            degreeName: "Web Development",
+            course_Name : "Web Development",
+            certificate: "Certificates/mutaharCertificate.jpg",
+          },
+          {
+            name: "Ayesha Tariq",
+            rollNo: 2,
+            degreeName: "Software Skills",
+            course_Name : "Amazon",
+            certificate: "Certificates/ayeshaTariq.jpg",
+          },
+          {
+            name: "Abdul Basit",
+            rollNo: 3,
+            degreeName: "Graphic Designer",
+            certificate: "Certificates/abdulBasit.jpg ",
+          },
+          {
+            name: "Jordan smith",
+            rollNo: 4,
+            degreeName: "Fintech Expert",
+            certificate: "Certificates/Jordan_smith.jpg",
+          },
+          {
+            name: "Zafar Iqbal",
+            rollNo: 5,
+            degreeName: "Python Developer",
+            certificate: "Certificates/zafarIqbal.jpg",
+          },
+          {
+            name: "Shahbaaz Khan",
+            rollNo: 6,
+            degreeName: "Auto Cad",
+            certificate: "Certificates/shahbaazKhan.jpg",
+          },
+          {
+            name: "George Miller",
+            rollNo: 7,
+            degreeName: "Information Technology",
+            certificate: "Certificates/Jordan_smith.jpg",
+          },
+          { name: "Hannah Scott", rollNo: 8, degreeName: "Mathematics" },
+          { name: "Ian Walker", rollNo: 9, degreeName: "Physics" },
+          { name: "Julia Roberts", rollNo: 10, degreeName: "Biotechnology" },
+        ];
+  
+        const table = document.getElementById("res_table");
+        const rollNoInput = document.getElementById("rollNo");
+  
+        const renderTable = (data) => {
+          table.innerHTML = "";
+          data?.forEach((stu) => {
+            
+            const row = `<tr><td>${stu.rollNo}</td><td>${stu.name}</td><td>${stu.degreeName}</td></tr> <tr id='img_container'><td colspan=3><img id='certificate_img' src=${stu.certificate} alt="" /> </td></tr><tr><td>${courseSelected}</td></tr>`;
+            table.innerHTML += row;
+          });
+        };
+  
+        let rollNo = "";
+        const findResult = (e) => {
+          rollNo = parseInt(e.target.value);
+        };
+  
+        const getResult = () => {
+          const filteredStudents = students.filter(
+            (stu) => stu.rollNo === rollNo
+          );
+  
+          if (!isNaN(rollNo) && filteredStudents?.length > 0) {
+            // alert("Student Exist");
+            renderTable(filteredStudents);
+          } else if (isNaN(rollNo)) {
+            renderTable();
+            alert("Please Enter Roll No");
+          } else {
+            alert("No Any Student With This Roll No");
+            table.innerHTML = `<tr><td>No Student Found</td></tr>`;
+          }
+        };
+        </script>
     <script>
         $("#navbar").load("../Navbar/index.html");
         $("#footer").load("../Footer/index.html");
