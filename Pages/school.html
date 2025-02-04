@@ -27,24 +27,30 @@
       referrerpolicy="no-referrer"
     ></script>
     <style>
-        #input_field{
-            width: 300px;
-            height: 50px;
-            font-size: large;
-
-        }
-        #res_table tr,#res_table td{
-            border: 1px solid black;
-        }
-        #res_table tr{
-            height: 50px;
-        }
-      
+      #input_field {
+        width: 300px;
+        height: 50px;
+        font-size: large;
+      }
+      #res_table tr,
+      #res_table td {
+        border: 1px solid black;
+      }
+      #res_table tr {
+        height: 50px;
+      }
+      #certificate_img {
+        height: 100%;
+        width: 100%;
+        /* background-position: center; */
+      }
     </style>
   </head>
   <body>
     <div id="navbar"></div>
-    <div class="d-flex justify-content-center align-items-center text-center w-100 mt-4">
+    <div
+      class="d-flex justify-content-center align-items-center text-center w-100 mt-4"
+    >
       <input
         type="number"
         name=""
@@ -53,37 +59,64 @@
         class="p-2"
         style="height: 50px"
         onchange="findResult(event)"
-        />
-        <div class="p-2 bg-primary" style="height: 50px; width: 50px;"  onclick="getResult()">
-          <i class="fa fa-2x fa-search text-white" aria-hidden="true"></i>
-        </div>
-        <!-- <button>find Result</button> -->
+      />
+      <div
+        class="p-2 bg-primary"
+        style="height: 50px; width: 50px"
+        onclick="getResult()"
+      >
+        <i class="fa fa-2x fa-search text-white" aria-hidden="true"></i>
+      </div>
+      <!-- <button>find Result</button> -->
     </div>
     <div class="d-flex w-100 justify-content-center p-2 mt-2">
-    <table id="res_table" class="w-75 text-center"></table>
-</div>
+      <table id="res_table" class="w-75 text-center"></table>
+    </div>
     <div id="footer"></div>
-
+    <!-- <img src="Certificates/certificate.jpg" alt=""> -->
     <script>
       const students = [
-        { name: "Alice Johnson", rollNo: 1, degreeName: "Computer Science" },
-        { name: "Bob Smith", rollNo: 2, degreeName: "Mechanical Engineering" },
         {
-          name: "Charlie Davis",
+          name: "Muhammad Mutahar",
+          rollNo: 1,
+          degreeName: "Web Development",
+          certificate: "Certificates/mutaharCertificate.jpg",
+        },
+        {
+          name: "Ayesha Tariq",
+          rollNo: 2,
+          degreeName: "Software Skills",
+          certificate: "Certificates/ayeshaTariq.jpg",
+        },
+        {
+          name: "Abdul Basit",
           rollNo: 3,
-          degreeName: "Electrical Engineering",
+          degreeName: "Graphic Designer",
+          certificate: "Certificates/abdulBasit.jpg ",
         },
-        { name: "Diana Ross", rollNo: 4, degreeName: "Civil Engineering" },
         {
-          name: "Ethan Wright",
-          rollNo: 5,
-          degreeName: "Business Administration",
+          name: "Jordan smith",
+          rollNo: 4,
+          degreeName: "Fintech Expert",
+          certificate: "Certificates/Jordan_smith.jpg",
         },
-        { name: "Fiona Clark", rollNo: 6, degreeName: "Software Engineering" },
+        {
+          name: "Zafar Iqbal",
+          rollNo: 5,
+          degreeName: "Python Developer",
+          certificate: "Certificates/zafarIqbal.jpg",
+        },
+        {
+          name: "Shahbaaz Khan",
+          rollNo: 6,
+          degreeName: "Auto Cad",
+          certificate: "Certificates/shahbaazKhan.jpg",
+        },
         {
           name: "George Miller",
           rollNo: 7,
           degreeName: "Information Technology",
+          certificate: "Certificates/Jordan_smith.jpg",
         },
         { name: "Hannah Scott", rollNo: 8, degreeName: "Mathematics" },
         { name: "Ian Walker", rollNo: 9, degreeName: "Physics" },
@@ -92,39 +125,36 @@
 
       const table = document.getElementById("res_table");
       const rollNoInput = document.getElementById("rollNo");
-      
 
       const renderTable = (data) => {
-        table.innerHTML= "";
+        table.innerHTML = "";
         data?.forEach((stu) => {
-          const row = `<tr><td>${stu.rollNo}</td><td>${stu.name}</td><td>${stu.degreeName}</td></tr>`;
+          const row = `<tr><td>${stu.rollNo}</td><td>${stu.name}</td><td>${stu.degreeName}</td></tr> <tr><td colspan=3><img id='certificate_img' src=${stu.certificate} alt="" /> </td></tr>`;
           table.innerHTML += row;
         });
       };
-      
-      let rollNo='';
-      const findResult=(e) => {
-           rollNo = parseInt(e.target.value);
-      }
-        
 
-          const getResult = ()=>{
-            const filteredStudents = students.filter(stu => stu.rollNo === rollNo);
-          
-          if(!isNaN(rollNo) && filteredStudents?.length > 0){
-              alert("Student Exist");
-              renderTable(filteredStudents)
-            }
-            else if(isNaN(rollNo)){
-              renderTable();
-                alert("Please Enter Roll No");
-            }
-            else{
-                alert("No Any Student With This Roll No");
-                table.innerHTML= `<tr><td>No Student Found</td></tr>`
-            }
-          }
+      let rollNo = "";
+      const findResult = (e) => {
+        rollNo = parseInt(e.target.value);
+      };
 
+      const getResult = () => {
+        const filteredStudents = students.filter(
+          (stu) => stu.rollNo === rollNo
+        );
+
+        if (!isNaN(rollNo) && filteredStudents?.length > 0) {
+          // alert("Student Exist");
+          renderTable(filteredStudents);
+        } else if (isNaN(rollNo)) {
+          renderTable();
+          alert("Please Enter Roll No");
+        } else {
+          alert("No Any Student With This Roll No");
+          table.innerHTML = `<tr><td>No Student Found</td></tr>`;
+        }
+      };
     </script>
 
     <script>
