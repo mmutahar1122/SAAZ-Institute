@@ -50,8 +50,9 @@
     <select name="" id="course_selection"   class="p-2" onchange="getValue()">
       <option value="Amazon" >Amazon</option>
       <option value="Web Development">Web Development</option>
+      <option value="Software Skills">Software Skills</option>
       <option value="Video Graphy">Video Graphy</option>
-      <option value="Graphic Designing">Graphic Designing</option>
+      <option value="Graphic Designer">Graphic Designing</option>
       <option value="Auto Cad 2d/3d">Auto Cad 2d/3d</option>
      </select>
       <input
@@ -87,50 +88,50 @@ let courseSelected = '';
           {
             name: "Muhammad Mutahar",
             rollNo: 1,
-            degreeName: "Web Development",
+            course: "Web Development",
             course_Name : "Web Development",
             certificate: "Certificates/mutaharCertificate.jpg",
           },
           {
             name: "Ayesha Tariq",
             rollNo: 2,
-            degreeName: "Software Skills",
+            course: "Software Skills",
             course_Name : "Amazon",
             certificate: "Certificates/ayeshaTariq.jpg",
           },
           {
             name: "Abdul Basit",
             rollNo: 3,
-            degreeName: "Graphic Designer",
+            course: "Graphic Designer",
             certificate: "Certificates/abdulBasit.jpg ",
           },
           {
             name: "Jordan smith",
             rollNo: 4,
-            degreeName: "Fintech Expert",
+            course: "Fintech Expert",
             certificate: "Certificates/Jordan_smith.jpg",
           },
           {
             name: "Zafar Iqbal",
             rollNo: 5,
-            degreeName: "Python Developer",
+            course: "Python Developer",
             certificate: "Certificates/zafarIqbal.jpg",
           },
           {
             name: "Shahbaaz Khan",
             rollNo: 6,
-            degreeName: "Auto Cad",
+            course: "Auto Cad",
             certificate: "Certificates/shahbaazKhan.jpg",
           },
           {
             name: "George Miller",
             rollNo: 7,
-            degreeName: "Information Technology",
+            course: "Information Technology",
             certificate: "Certificates/Jordan_smith.jpg",
           },
-          { name: "Hannah Scott", rollNo: 8, degreeName: "Mathematics" },
-          { name: "Ian Walker", rollNo: 9, degreeName: "Physics" },
-          { name: "Julia Roberts", rollNo: 10, degreeName: "Biotechnology" },
+          { name: "Hannah Scott", rollNo: 8, course: "Mathematics" },
+          { name: "Ian Walker", rollNo: 9, course: "Physics" },
+          { name: "Julia Roberts", rollNo: 10, course: "Biotechnology" },
         ];
   
         const table = document.getElementById("res_table");
@@ -140,7 +141,7 @@ let courseSelected = '';
           table.innerHTML = "";
           data?.forEach((stu) => {
             
-            const row = `<tr><td>${stu.rollNo}</td><td>${stu.name}</td><td>${stu.degreeName}</td></tr> <tr id='img_container'><td colspan=3><img id='certificate_img' src=${stu.certificate} alt="" /> </td></tr><tr><td>${courseSelected}</td></tr>`;
+            const row = `<tr><td>${stu.rollNo}</td><td>${stu.name}</td><td>${stu.course}</td></tr> <tr id='img_container'><td colspan=3><img id='certificate_img' src=${stu.certificate} alt="" /></tr>`;
             table.innerHTML += row;
           });
         };
@@ -152,7 +153,7 @@ let courseSelected = '';
   
         const getResult = () => {
           const filteredStudents = students.filter(
-            (stu) => stu.rollNo === rollNo
+            (stu) => stu.rollNo === rollNo && stu.course === courseSelected
           );
   
           if (!isNaN(rollNo) && filteredStudents?.length > 0) {
