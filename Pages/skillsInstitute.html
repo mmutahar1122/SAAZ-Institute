@@ -34,7 +34,7 @@
         #img_container{
             padding: 5px;
         }
-        #course_selection{
+        #course_selection, #Session{
           width: 300px;
           height: 50px;
           font-size: large;
@@ -47,9 +47,18 @@
      <div
       class="d-flex justify-content-center align-items-center text-center w-100 mt-4 gap-2"
     >
+    <select name="" id="Session"  class="p-2" onchange="getValue()">
+      <option value="" >Session</option>
+      <option value="2022">2022</option>
+      <option value="2023">2023</option>
+      <option value="2024">2024</option>
+      <option value="2025">2025</option>
+      
+     </select>
     <select name="" id="course_selection"   class="p-2" onchange="getValue()">
       <option value="Amazon" >Amazon</option>
       <option value="Web Development">Web Development</option>
+      <option value="Python Developer">Python Developer</option>
       <option value="Software Skills">Software Skills</option>
       <option value="Video Graphy">Video Graphy</option>
       <option value="Graphic Designer">Graphic Designing</option>
@@ -80,10 +89,11 @@
     <div id="footer"></div>
     <script>
 let courseSelected = '';
+let session = '';
       const getValue=()=>{
          courseSelected = document.getElementById("course_selection").value;
+         session = document.getElementById("Session").value;
         }
-        // console.log("courseSElection-=-",)
         const students = [
           {
             name: "Muhammad Mutahar",
@@ -91,6 +101,7 @@ let courseSelected = '';
             course: "Web Development",
             course_Name : "Web Development",
             certificate: "Certificates/mutaharCertificate.jpg",
+            session: "2024",
           },
           {
             name: "Ayesha Tariq",
@@ -98,36 +109,42 @@ let courseSelected = '';
             course: "Software Skills",
             course_Name : "Amazon",
             certificate: "Certificates/ayeshaTariq.jpg",
+            session: "2024",
           },
           {
             name: "Abdul Basit",
             rollNo: 3,
             course: "Graphic Designer",
             certificate: "Certificates/abdulBasit.jpg ",
+            session: "2023",
           },
           {
             name: "Jordan smith",
             rollNo: 4,
             course: "Fintech Expert",
             certificate: "Certificates/Jordan_smith.jpg",
+            session: "2022",
           },
           {
             name: "Zafar Iqbal",
             rollNo: 5,
             course: "Python Developer",
             certificate: "Certificates/zafarIqbal.jpg",
+            session: "2023",
           },
           {
             name: "Shahbaaz Khan",
             rollNo: 6,
             course: "Auto Cad",
             certificate: "Certificates/shahbaazKhan.jpg",
+            session: "2023",
           },
           {
             name: "George Miller",
             rollNo: 7,
             course: "Information Technology",
             certificate: "Certificates/Jordan_smith.jpg",
+            session: "2022",
           },
           { name: "Hannah Scott", rollNo: 8, course: "Mathematics" },
           { name: "Ian Walker", rollNo: 9, course: "Physics" },
@@ -153,7 +170,7 @@ let courseSelected = '';
   
         const getResult = () => {
           const filteredStudents = students.filter(
-            (stu) => stu.rollNo === rollNo && stu.course === courseSelected
+            (stu) => stu.rollNo === rollNo && stu.course === courseSelected && stu.session === session
           );
   
           if (!isNaN(rollNo) && filteredStudents?.length > 0) {
