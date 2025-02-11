@@ -39,14 +39,25 @@
           height: 50px;
           font-size: large;
         }
+        .rollNo_detailContainer{
+          display: flex;
+          justify-content: center;
+        }
+        @media (max-width:768px) {
+          .rollNo_detailContainer{
+          display: block;
+          
+        }
+    }
       </style>
 </head>
 <body>
     <div id="navbar"></div>
      <!-- <h1>welcome to skills Institute</h1> -->
      <div
-      class="d-flex justify-content-center align-items-center text-center w-100 mt-4 gap-2"
+      class="rollNo_detailContainer w-100 mt-4 gap-2"
     >
+    <div>
     <select name="" id="Session"  class="p-2" onchange="getValue()">
       <option value="" >Session</option>
       <option value="2022">2022</option>
@@ -55,15 +66,22 @@
       <option value="2025">2025</option>
       
      </select>
+    </div>
+    <div>
     <select name="" id="course_selection"   class="p-2" onchange="getValue()">
       <option value="Amazon" >Amazon</option>
       <option value="Web Development">Web Development</option>
       <option value="Python Developer">Python Developer</option>
       <option value="Software Skills">Software Skills</option>
+      <option value="MS OFFICE MANAGEMENT">MS Office Management</option>
+      <option value="Information Technology">Information Technology</option>
+      <option value="DIPLOMA IN IT">diploma In IT</option>
       <option value="Video Graphy">Video Graphy</option>
       <option value="Graphic Designer">Graphic Designing</option>
       <option value="Auto Cad 2d/3d">Auto Cad 2d/3d</option>
      </select>
+    </div>
+    <div>
       <input
         type="number"
         name=""
@@ -73,9 +91,9 @@
         style="height: 50px"
         onchange="findResult(event)"
       />
-    
+    </div>
       <div
-        class="p-2 bg-primary"
+        class="btn p-2 bg-primary"
         style="height: 50px; width: 50px"
         onclick="getResult()"
       >
@@ -87,70 +105,26 @@
       <table id="res_table" class="w-75 text-center"></table>
     </div>
     <div id="footer"></div>
+    
+
     <script>
 let courseSelected = '';
 let session = '';
+let students = '';
+
+fetch('student.json')
+.then(res => res.json())
+.then(stud =>{
+  students = stud.students
+console.log("stud",stud.students)
+
+}).catch(err=>console.log("fetch_Error",err));
+
       const getValue=()=>{
          courseSelected = document.getElementById("course_selection").value;
          session = document.getElementById("Session").value;
         }
-        const students = [
-          {
-            name: "Muhammad Mutahar",
-            rollNo: 1,
-            course: "Web Development",
-            course_Name : "Web Development",
-            certificate: "Certificates/mutaharCertificate.jpg",
-            session: "2024",
-          },
-          {
-            name: "Ayesha Tariq",
-            rollNo: 2,
-            course: "Software Skills",
-            course_Name : "Amazon",
-            certificate: "Certificates/ayeshaTariq.jpg",
-            session: "2024",
-          },
-          {
-            name: "Abdul Basit",
-            rollNo: 3,
-            course: "Graphic Designer",
-            certificate: "Certificates/abdulBasit.jpg ",
-            session: "2023",
-          },
-          {
-            name: "Jordan smith",
-            rollNo: 4,
-            course: "Fintech Expert",
-            certificate: "Certificates/Jordan_smith.jpg",
-            session: "2022",
-          },
-          {
-            name: "Zafar Iqbal",
-            rollNo: 5,
-            course: "Python Developer",
-            certificate: "Certificates/zafarIqbal.jpg",
-            session: "2023",
-          },
-          {
-            name: "Shahbaaz Khan",
-            rollNo: 6,
-            course: "Auto Cad",
-            certificate: "Certificates/shahbaazKhan.jpg",
-            session: "2023",
-          },
-          {
-            name: "George Miller",
-            rollNo: 7,
-            course: "Information Technology",
-            certificate: "Certificates/Jordan_smith.jpg",
-            session: "2022",
-          },
-          { name: "Hannah Scott", rollNo: 8, course: "Mathematics" },
-          { name: "Ian Walker", rollNo: 9, course: "Physics" },
-          { name: "Julia Roberts", rollNo: 10, course: "Biotechnology" },
-        ];
-  
+       
         const table = document.getElementById("res_table");
         const rollNoInput = document.getElementById("rollNo");
   
@@ -191,3 +165,6 @@ let session = '';
     </script>
 </body>
 </html>
+
+
+
