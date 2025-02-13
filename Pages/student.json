@@ -2,10 +2,10 @@
 
  "students" : [
  {
-      "name": "Muhammad Mutahar",
+      "name": "Husnain",
       "rollNo": 1,
       "course": "Web Development",
-      "certificate": "Certificates/mutaharCertificate.jpg",
+      "certificate": "Certificates/Husnain.JPG",
       "session": "2024"
     },
     {
@@ -47,7 +47,7 @@
       "name": "MUNEEBA ABID",
       "rollNo": 15,
       "course": "GRAPHIC DESIGNER",
-      "certificate": "Certificates/mutaharCertificate.jpg",
+      "certificate": "Certificates/Muneeba_abid.JPG",
       "session": "2024"
     },
     {
@@ -75,7 +75,7 @@
       "name": "SAWAIRA",
       "rollNo": 19,
       "course": "MS OFFICE MANAGEMENT",
-      "certificate": "Certificates/mutaharCertificate.jpg",
+      "certificate": "Certificates/Sawaira.JPG",
       "session": "2024"
     },
     {
