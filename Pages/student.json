@@ -1,152 +1,76 @@
 {
 
  "students" : [
- {
-      "name": "Husnain",
-      "rollNo": 1,
-      "course": "Web Development",
-      "certificate": "Certificates/Husnain.JPG",
-      "session": "2024"
-    },
+ 
     {
-      "name": "ASIFA PERVEEN",
-      "rollNo": 1,
+      "name": "ABID HUSNAIN",
+      "rollNo": 183305,
       "course": "MS OFFICE MANAGEMENT",
-      "certificate": "Certificates/mutaharCertificate.jpg",
-      "session": "2024"
-    },
-    {
-      "name": "MUHAMMAD MUAAZ",
-      "rollNo": 11,
-      "course": "MS OFFICE MANAGEMENT",
-      "certificate": "Certificates/muaaz_haider.JPG",
-      "session": "2024"
-    },
-    {
-      "name": "MUHAMMAD SUBHAN",
-      "rollNo": 12,
-      "course": "MS OFFICE MANAGEMENT",
-      "certificate": "Certificates/mutaharCertificate.jpg",
-      "session": "2024"
-    },
-    {
-      "name": "CHOHDRI M.REHAN",
-      "rollNo": 13,
-      "course": "SPOKEN ENGLISH",
-      "certificate": "Certificates/mutaharCertificate.jpg",
-      "session": "2024"
+      "certificate": "Certificates/abid.JPG",
+      "session": "2025"
     },
     {
       "name": "ALI AHMAD",
-      "rollNo": 14,
+      "rollNo": 183306,
       "course": "MS OFFICE MANAGEMENT",
-      "certificate": "Certificates/mutaharCertificate.jpg",
-      "session": "2024"
-    },
-    {
-      "name": "MUNEEBA ABID",
-      "rollNo": 15,
-      "course": "GRAPHIC DESIGNER",
-      "certificate": "Certificates/Muneeba_abid.JPG",
-      "session": "2024"
-    },
-    {
-      "name": "ZAIBA SHAHZADI",
-      "rollNo": 16,
-      "course": "MS OFFICE MANAGEMENT",
-      "certificate": "Certificates/mutaharCertificate.jpg",
-      "session": "2024"
-    },
-    {
-      "name": "ZAINAB NADEEM",
-      "rollNo": 17,
-      "course": "WEB DEVELOPMENT",
-      "certificate": "Certificates/mutaharCertificate.jpg",
-      "session": "2024"
-    },
-    {
-      "name": "AYESHA HUSSAIN",
-      "rollNo": 18,
-      "course": "MS OFFICE MANAGEMENT",
-      "certificate": "Certificates/mutaharCertificate.jpg",
-      "session": "2024"
-    },
-    {
-      "name": "SAWAIRA",
-      "rollNo": 19,
-      "course": "MS OFFICE MANAGEMENT",
-      "certificate": "Certificates/Sawaira.JPG",
-      "session": "2024"
-    },
-    {
-      "name": "MUHAMMAD SUBHAN",
-      "rollNo": 20,
-      "course": "GRAPHIC DESIGNER",
-      "certificate": "Certificates/mutaharCertificate.jpg",
-      "session": "2024"
-    },
-    {
-      "name": "ABID HUSNAIN",
-      "rollNo": 21,
-      "course": "MS OFFICE MANAGEMENT",
-      "certificate": "Certificates/mutaharCertificate.jpg",
-      "session": "2024"
-    },
-    {
-      "name": "AYESHA HUSSAIN",
-      "rollNo": 22,
-      "course": "GRAPHIC DESIGNER",
-      "certificate": "Certificates/mutaharCertificate.jpg",
-      "session": "2024"
+      "certificate": "Certificates/ali_ahmad.JPG",
+      "session": "2025"
     },
     {
       "name": "ANEETA AASHRAF",
-      "rollNo": 1,
+      "rollNo": 153302,
       "course": "DIPLOMA IN IT",
-      "certificate": "Certificates/mutaharCertificate.jpg",
+      "certificate": "Certificates/Aneeta_Ashraf.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "Asifa",
+      "rollNo": 183308,
+      "course": "MS OFFICE MANAGEMENT",
+      "certificate": "Certificates/asifa.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "MUHAMMAD HUSNAIN",
+      "rollNo": 203301,
+      "course": "WEB DEVELOPMENT",
+      "certificate": "Certificates/Husnain.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "MUHAMMAD SUBHAN",
+      "rollNo": 183302,
+      "course": "GRAPHIC DESIGNER",
+      "certificate": "Certificates/M_Subhan.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "MUAAZ HAIDER",
+      "rollNo": 183302,
+      "course": "MS OFFICE MANAGEMENT",
+      "certificate": "Certificates/Muaz.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "MUNEEBA ABID",
+      "rollNo": 193301,
+      "course": "GRAPHIC DESIGNER",
+      "certificate": "Certificates/Muneeba_abid.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "SAWAIRA",
+      "rollNo": 183304,
+      "course": "MS OFFICE MANAGEMENT",
+      "certificate": "Certificates/Sawaira.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "MUHAMMAD SUBHAN",
+      "rollNo": 183301,
+      "course": "MS OFFICE MANAGEMENT",
+      "certificate": "Certificates/Subhan.JPG",
       "session": "2024"
-    },
-    {
-      "name": "Ayesha Tariq",
-      "rollNo": 2,
-      "course": "Software Skills",
-      "certificate": "Certificates/ayeshaTariq.jpg",
-      "session": "2024"
-    },
-    {
-      "name": "Abdul Basit",
-      "rollNo": 3,
-      "course": "Graphic Designer",
-      "certificate": "Certificates/abdulBasit.jpg ",
-      "session": "2023"
-    },
-    {
-      "name": "Jordan smith",
-      "rollNo": 4,
-      "course": "Fintech Expert",
-      "certificate": "Certificates/Jordan_smith.jpg",
-      "session": "2022"
-    },
-    {
-      "name": "Zafar Iqbal",
-      "rollNo": 5,
-      "course": "Python Developer",
-      "certificate": "Certificates/zafarIqbal.jpg",
-      "session": "2023"
-    },
-    {
-      "name": "Shahbaaz Khan",
-      "rollNo": 6,
-      "course": "Auto Cad",
-      "certificate": "Certificates/shahbaazKhan.jpg",
-      "session": "2023"
-    },
-    {
-      "name": "George Miller",
-      "rollNo": 7,
-      "course": "Information Technology",
-      "certificate": "Certificates/Jordan_smith.jpg",
-      "session": "2022"
     }
  ]}
 
