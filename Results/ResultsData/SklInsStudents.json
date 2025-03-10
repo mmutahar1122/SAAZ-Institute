@@ -31,13 +31,6 @@
       "session": "2025"
     },
     {
-      "name": "MUHAMMAD HUSNAIN",
-      "rollNo": 203301,
-      "course": "WEB DEVELOPMENT",
-      "certificate": "Certificates/Husnain.JPG",
-      "session": "2025"
-    },
-    {
       "name": "MUHAMMAD SUBHAN",
       "rollNo": 183302,
       "course": "GRAPHIC DESIGNER",
@@ -70,6 +63,48 @@
       "rollNo": 183301,
       "course": "MS OFFICE MANAGEMENT",
       "certificate": "Certificates/Subhan.JPG",
+      "session": "2024"
+    },
+    {
+      "name": "MUNEEBA ABID",
+      "rollNo": 193301,
+      "course": "GRAPHIC DESIGNER",
+      "certificate": "Certificates/MUNEEBA_ABID.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "MUHAMMAD HUSNAIN",
+      "rollNo": 203301,
+      "course": "WEB DEVELOPMENT",
+      "certificate": "Certificates/M_HUSNAIN.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "TALHA KHAN",
+      "rollNo": 183309,
+      "course": "MS OFFICE MANAGEMENT",
+      "certificate": "Certificates/TALHA_KHAN.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "AYESHA HUSSAIN",
+      "rollNo": 183307,
+      "course": "MS OFFICE MANAGEMENT",
+      "certificate": "Certificates/AYESHA_HUSSAIN.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "ZAIBA  SHAHZADI",
+      "rollNo": 183303,
+      "course": "MS OFFICE MANAGEMENT",
+      "certificate": "Certificates/ZAIBA_SHAHZADI.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "MUHAMMAD TAHA",
+      "rollNo": 133218,
+      "course": "MS OFFICE MANAGEMENT",
+      "certificate": "Certificates/M_TAHA.jpeg",
       "session": "2024"
     }
  ]}
