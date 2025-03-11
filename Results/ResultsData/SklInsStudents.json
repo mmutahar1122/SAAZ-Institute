@@ -106,6 +106,27 @@
       "course": "MS OFFICE MANAGEMENT",
       "certificate": "Certificates/M_TAHA.jpeg",
       "session": "2024"
+    },
+    {
+      "name": "MUNEED UR REHMAN",
+      "rollNo": 183245,
+      "course": "MS OFFICE MANAGEMENT",
+      "certificate": "Certificates/MUNEEB_UR_REHMAN.jpeg",
+      "session": "2024"
+    },
+    {
+      "name": "IFRA SHAFIQUE",
+      "rollNo": 183277,
+      "course": "MS OFFICE MANAGEMENT",
+      "certificate": "Certificates/IFRA.jpeg",
+      "session": "2024"
+    },
+    {
+      "name": "MUHAMMAD ALI",
+      "rollNo": 183249,
+      "course": "MS OFFICE MANAGEMENT",
+      "certificate": "Certificates/M_ALI.jpeg",
+      "session": "2024"
     }
  ]}
 
