@@ -132,8 +132,11 @@ padding: 10px;
         color: rgb(73, 73, 73);
     }
     .ser_img{
-        width: 300px;
+        width: 100%;
         height: 150px;
+        object-fit: cover;
+        object-position: center; 
+        display: block;
     }
     #company_content_container{
         text-align: center;
