@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <div class="main_container d-md-flex d-block gap-2">
+        <div class="w-25">
+            <div class="d-grid  gap-2 col-6 mx-auto">
+                <button class="btn btn-primary" type="button" onclick="loadPage('webDesign.html')">Website
+                    Design</button>
+                <button class="btn btn-primary" type="button" onclick="loadPage('webDevelopment.html')">Website
+                    Development</button>
+                <button class="btn btn-primary" type="button">Website Maintenance</button>
+                <button class="btn btn-primary" type="button">Website Hosting</button>
+                <button class="btn btn-primary" type="button">Social Media Marketing</button>
+                <button class="btn btn-primary" type="button">Copywriting</button>
+                <button class="btn btn-primary" type="button">SEO</button>
+                <button class="btn btn-primary" type="button">Website Cloning</button>
+            </div>
+        </div>
+        <div class="w-75" id="contentView"></div>
+    </div>
+    <script>
+        $('#navbar').load('../../../WEbDesignNavbar/navbar.html')
+    </script>
+    <script>
+        function loadPage(page) {
+            fetch(page)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("contentView").innerHTML = data;
+                })
+                .catch(error => console.error("Error loading page:", error));
+        }
+    </script>
+</body>
+
+</html>

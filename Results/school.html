@@ -102,7 +102,6 @@
         );
 
         if (!isNaN(rollNo) && filteredStudents?.length > 0) {
-          // alert("Student Exist");
           renderTable(filteredStudents);
         } else if (isNaN(rollNo)) {
           renderTable();
