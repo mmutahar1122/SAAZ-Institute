@@ -7,18 +7,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <style>
+            .b{
+                border: 2px solid red;
+            }
+        </style>
 </head>
 
 <body>
     <div id="navbar"></div>
-    <div class="main_container d-md-flex d-block gap-2">
-        <div class="w-25">
-            <div class="d-grid  gap-2 col-6 mx-auto">
+    <div class="d-md-flex d-block gap-2 b mt-2 p-2">
+        <div class="col-md-3 col-12">
+            <div class="d-grid  gap-2 col-md-6  mx-auto">
                 <button class="btn btn-primary" type="button" onclick="loadPage('webDesign.html')">Website
                     Design</button>
                 <button class="btn btn-primary" type="button" onclick="loadPage('webDevelopment.html')">Website
                     Development</button>
-                <button class="btn btn-primary" type="button">Website Maintenance</button>
+                <button class="btn btn-primary" type="button" onclick="loadPage('webMaintenance.html')">Website Maintenance</button>
                 <button class="btn btn-primary" type="button">Website Hosting</button>
                 <button class="btn btn-primary" type="button">Social Media Marketing</button>
                 <button class="btn btn-primary" type="button">Copywriting</button>
@@ -26,7 +31,7 @@
                 <button class="btn btn-primary" type="button">Website Cloning</button>
             </div>
         </div>
-        <div class="w-75" id="contentView"></div>
+        <div class="col-md-9 col-12 mt-md-0 mt-3" id="contentView"></div>
     </div>
     <script>
         $('#navbar').load('../../../WEbDesignNavbar/navbar.html')
@@ -40,6 +45,9 @@
                 })
                 .catch(error => console.error("Error loading page:", error));
         }
+        window.onload = function () {
+            loadPage('webDesign.html');
+        };
     </script>
 </body>
 
