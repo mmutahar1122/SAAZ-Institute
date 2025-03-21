@@ -25,8 +25,8 @@
                     Development</button>
                 <button class="btn btn-primary" type="button" onclick="loadPage('webMaintenance.html')">Website Maintenance</button>
                 <button class="btn btn-primary" type="button" onclick="loadPage('webHosting.html')">Website Hosting</button>
-                <button class="btn btn-primary" type="button">Social Media Marketing</button>
-                <button class="btn btn-primary" type="button">Copywriting</button>
+                <button class="btn btn-primary" type="button" onclick="loadPage('socialmedia.html')">Social Media Marketing</button>
+                <button class="btn btn-primary" type="button" onclick="loadPage('seo.html')">Copywriting</button>
                 <button class="btn btn-primary" type="button">SEO</button>
                 <button class="btn btn-primary" type="button">Website Cloning</button>
             </div>
@@ -46,7 +46,7 @@
                 .catch(error => console.error("Error loading page:", error));
         }
         window.onload = function () {
-            loadPage('webDesign.html');
+            loadPage('seo.html');
         };
     </script>
 </body>
