@@ -7,11 +7,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <style>
-            .b{
-                border: 2px solid red;
-            }
-        </style>
+    <style>
+        .b {
+            border: 2px solid red;
+        }
+    </style>
 </head>
 
 <body>
@@ -23,12 +23,18 @@
                     Design</button>
                 <button class="btn btn-primary" type="button" onclick="loadPage('webDevelopment.html')">Website
                     Development</button>
-                <button class="btn btn-primary" type="button" onclick="loadPage('webMaintenance.html')">Website Maintenance</button>
-                <button class="btn btn-primary" type="button" onclick="loadPage('webHosting.html')">Website Hosting</button>
-                <button class="btn btn-primary" type="button" onclick="loadPage('socialmedia.html')">Social Media Marketing</button>
-                <button class="btn btn-primary" type="button" onclick="loadPage('seo.html')">Copywriting</button>
-                <button class="btn btn-primary" type="button">SEO</button>
-                <button class="btn btn-primary" type="button">Website Cloning</button>
+                <button class="btn btn-primary" type="button" onclick="loadPage('webMaintenance.html')">Website
+                    Maintenance</button>
+                <button class="btn btn-primary" type="button" onclick="loadPage('webHosting.html')">Website
+                    Hosting</button>
+                <button class="btn btn-primary" type="button" onclick="loadPage('socialmedia.html')">Social Media
+                    Marketing</button>
+                <button class="btn btn-primary" type="button">Copywriting</button>
+                <button class="btn btn-primary" type="button" onclick="loadPage('seo.html')">SEO</button>
+                <button class="btn btn-primary" type="button" onclick="loadPage('webcloning.html')">Website
+                    Cloning</button>
+                <button class="btn btn-primary" type="button" onclick="loadPage('communitymanagement.html')">Community
+                    Management</button>
             </div>
         </div>
         <div class="col-md-9 col-12 mt-md-0 mt-3" id="contentView"></div>
@@ -46,7 +52,7 @@
                 .catch(error => console.error("Error loading page:", error));
         }
         window.onload = function () {
-            loadPage('seo.html');
+            loadPage('communitymanagement.html');
         };
     </script>
 </body>
