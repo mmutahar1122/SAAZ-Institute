@@ -11,71 +11,86 @@
         .Fact_Container {
             background-color: #F4F4F4;
         }
+        .b{
+            border: 2px solid red;
+        }
+        .main_container{
+    width: 75%;
+}
+        @media (max-width:768px) {
+            .main_container {
+                width: 100%;
+            }
+
+        }
     </style>
 </head>
 
 <body>
 
-    <div id="navbar">
-    </div>
-    <div class="container">
-        <div class="w-75 p-2">
+    <button onclick="window.history.back();">Go Back</button>
+
+    <div class="main_container">
+        <div class="sub_container p-2">
             <div class="">
-                <img src="../../../img/shopify/theme-design-detail.png" alt="">
+                <img src="../../../img/shopify/theme-design-detail.png" alt="" class="w-100">
             </div>
-            <h1>Shopify Website Design</h1>
-            <p class="text-secondary fw-bold">From innovative custom Shopify design concepts and wireframing to the best
+            <h1 class="mt-2">Shopify App Development</h1>
+            <p class="text-secondary fw-medium fs-5">From innovative custom Shopify design concepts and wireframing to the best
                 Shopify design services and store development, our Shopify design team at Makeshopify can do it all for
                 you Talk to Our Experts</p>
-            <p class="fw-bold">Integrate your shopify store with custom designs</p>
+            <p class="fw-medium fs-5">Integrate your shopify store with custom designs</p>
             <h2 class="fw-bold">Custom Shopify Website Designs</h2>
             <h4>Eye-catching Shopify eCommerce web design & memorable user experience are what make your Shopify store
                 stand out from the crowd.</h4>
             <h3 class="fw-bold">Custom Shopify theme design</h3>
-            <p class="text-secondary fw-bold">If you’re wondering what makes us one of the top Shopify designers, let us
+            <p class="text-secondary fw-medium fs-5">If you’re wondering what makes us one of the top Shopify designers, let us
                 help you understand. At Makeshopify, we specialize in custom Shopify store design services that are
                 tailored for your business. As leading Shopify plus designers, we have created customized Shopify
                 designs for businesses worldwide. This includes both off-the-shelf Shopify web design packages with
                 pre-built themes as well as custom-made Shopify/Shopify Plus designs for your Shopify storefront.</p>
 
-            <div>
-                <div>
-                    <div>
-                    <h3>Custom Shopify theme customization</h3>
-                    <div>Awe-striking designs, created by our dedicated Shopify theme designers, which are further customizable to fit your requirements.</div>
-                </div>
-                <div>
-                    <h3>Custom Shopify & Shopify Plus design</h3>               
-                         <div>Shopify designs tailor-made for you & built to be a perfect match of your imagination</div>
+            <div class="">
+                <div class="d-md-flex d-block gap-2">
+                    <div class="w-100 border-bottom">
+                        <h3>Custom Shopify theme customization</h3>
+                        <div class="fs-5">Awe-striking designs, created by our dedicated Shopify theme designers, which are further
+                            customizable to fit your requirements.</div>
+                    </div>
+                    <div class="w-100 border-bottom ">
+                        <h3>Custom Shopify & Shopify Plus design</h3>
+                        <div class="fs-5">Shopify designs tailor-made for you & built to be a perfect match of your imagination</div>
+
+                    </div>
 
                 </div>
-                
-             </div>
-                <div>
-                    <div>
+                <div class="d-md-flex d-block gap-2 mt-2">
+                    <div class="w-100 border-bottom">
                         <h3>User experience & interaction design</h3>
-                        <div>Our Shopify UX designers and UI experts use a design-centric approach based on modern concepts, with user experience as the top priority.</div>
+                        <div class="fs-5">Our Shopify UX designers and UI experts use a design-centric approach based on modern
+                            concepts, with user experience as the top priority.</div>
                     </div>
-                    <div>
+                    <div class="w-100 border-bottom">
                         <h3>Responsive design</h3>
-                        <div>Our expert Shopify UX developers ensure that the designs are made to be adaptive and responsive to any device, whether it may be mobiles, tablets, or desktops.</div>
+                        <div class="fs-5">Our expert Shopify UX developers ensure that the designs are made to be adaptive and
+                            responsive to any device, whether it may be mobiles, tablets, or desktops.</div>
                     </div>
                 </div>
-                <div>
+                <div class="d-md-flex d-block gap-2 mt-2">
+                <div class="w-100 border-bottom">
                     <h3>Incremental design updates</h3>
-                    <div>Design updates made in stages instead of a drastic website design overhaul to avoid confusion for returning visitors.</div>
+                    <div class="fs-5">Design updates made in stages instead of a drastic website design overhaul to avoid confusion
+                        for returning visitors.</div>
                 </div>
-                <div>
+                <div class="w-100 border-bottom">
                     <h3>Wireframing & Prototyping</h3>
-                    <div>From wireframes & prototypes to the final website, our transparency shows our commitment to delivering the best.</div>
+                    <div class="fs-5">From wireframes & prototypes to the final website, our transparency shows our commitment to
+                        delivering the best.</div>
                 </div>
+            </div>
             </div>
         </div>
     </div>
-    </div>
-    <script>
-        $('#navbar').load('../../shopify_Head&Footer/Navbar.html');
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
