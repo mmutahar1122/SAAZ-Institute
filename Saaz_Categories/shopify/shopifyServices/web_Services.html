@@ -12,13 +12,28 @@
                 background-color: #F4F4F4;
             }
             .main_container{
+            width: 80%;
+            margin: auto;
+        }
+            .sub_container1{
     width: 75%;
 }
+.sub_container2{
+    width: 25%;
+}
+.contact_btn{
+    background-color: #d0f224;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
         @media (max-width:768px) {
-            .main_container {
+            .sub_container1 {
                 width: 100%;
             }
-
+            .main_container{
+            width: 100%;
+        }
         }
         </style>
 </head>
@@ -27,8 +42,8 @@
 
     <button onclick="window.history.back();">Go Back</button>
 
-    <div class="main_container">
-    <div class="p-2">
+    <div class="main_container d-flex gap-2">
+    <div class="sub_container1 p-2">
         <div class="">
             <img src="../../../img/shopify/customized-development-img.jpg" alt="" class="w-100">
             <p class="mt-2 rounded fw-bold fs-2">US-Based Web Development</p>
@@ -68,6 +83,12 @@
     
     </div>
 
+</div>
+<div class="sub_container2 d-md-flex d-none">
+    <div class="bg-dark rounded p-5 text-center position-fixed">
+        <h2 class="fw-bold text-white">Need Support to this Service?</h2>
+        <button class="contact_btn fw-bold">CONTACT US?</button>
+    </div>
 </div>
 </div>
 
