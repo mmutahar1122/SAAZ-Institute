@@ -39,6 +39,40 @@
     .img_container {
       width: 170px;
     }
+    #input_field {
+          width: 300px;
+          height: 50px;
+          font-size: large;
+        }
+        #res_table tr,
+        #res_table td {
+          border: 1px solid black;
+        }
+        #res_table tr {
+          height: 50px;
+        }
+        #certificate_img {
+          height: 100%;
+          width: 100%;
+        }
+        #img_container{
+            padding: 5px;
+        }
+        #course_selection, #Session{
+          width: 300px;
+          height: 50px;
+          font-size: large;
+        }
+        .rollNo_detailContainer{
+          display: flex;
+          justify-content: center;
+        }
+        @media (max-width:768px) {
+          .rollNo_detailContainer{
+          display: block;
+          
+        }
+    }
   </style>
 </head>
 
@@ -46,6 +80,82 @@
   <div id="navbar"></div>
   <marquee direction="" class="bg-primary text-white h3 py-2">M.S Office Management, Graphic Designing, Digital Marketing, WEB Develoment, Artificial Intelligence, Video Editing & Graphic, Search Engine Optimization ( SEO ), Software Developmetn, Auto CAD 2D/3D E-Commerce & Freelancing, Diploma in Technical Management, Diploma in Financial Management, Python, Shopify, Diploma in Librarianship, CCNA & CCNP </marquee>
   <marquee direction="" class="bg-primary text-white h3 py-2">Youtube Automation & Monetization, Tiktok Automation & Monetization, Facebook Automation & Monetization, All Computer Language, Oracle Apex Developer, Oracle & Java Developer, A+ Hardware Technitian, Amazon Cyber Security, Word Press Guest Posting, Diploma in Electrical & Electronics, Diploma in Stitching & Textile, Fashion Designing, Diploma in DBMS</marquee>
+ 
+  <div
+      class="rollNo_detailContainer w-100 mt-4 gap-2"
+    >
+    <div>
+    <select name="" id="Session"  class="p-2" onchange="getValue()">
+      <option value="" >Session</option>
+      <option value="2022">2022</option>
+      <option value="2023">2023</option>
+      <option value="2024">2024</option>
+      <option value="2025">2025</option>
+      
+     </select>
+    </div>
+    <div>
+    <select name="" id="course_selection"   class="p-2" onchange="getValue()">
+      <option value="Amazon" >Amazon</option>
+      <option value="Web Development">Web Development</option>
+      <option value="Diploma in Database Management">Diploma in Database Management</option>
+      <option value="Python Developer">Python Developer</option>
+      <option value="Software Skills">Software Skills</option>
+      <option value="MS OFFICE MANAGEMENT">MS Office Management</option>
+      <option value="Information Technology">Diploma Information Technology</option>
+      <option value="DIPLOMA IN IT">diploma In IT</option>
+      <option value="Video Graphy">Video Graphy</option>
+      <option value="Graphic Designer">Graphic Designing</option>
+      <option value="Auto Cad 2d/3d">Auto Cad 2d/3d</option>
+      <option value="shopify">Shopify</option>
+      <option value="Free Lancing">Free Lancing</option>
+      <option value="Video Graphy">Video Graphy</option>
+      <option value="Diploma in Financial Management">Diploma in Financial Management</option>
+      <option value="E-Commerece">E-Commerece</option>
+      <option value="Ethical Hacking">Ethical Hacking</option>
+      <option value="CCNA with Ethical Hacking">CCNA with Ethical Hacking</option>
+      <option value="Desktop Application">Desktop Application</option>
+      <option value="Amazon VA">Amazon VA</option>
+      <option value="Android Development">Android Development</option>
+      <option value="Diploma in Librarianship">Diploma in Librarianship</option>
+      <option value="Digital Marketing">Digital Marketing</option>
+      <option value="IELTS">IELTS</option>
+      <option value="Diploma in Technical Management">Diploma in Technical Management</option>
+      <option value="Spoken English">Spoken English</option>
+      <option value="CCNP">CCNP</option>
+      <option value="All Computer Language">All Computer Language</option>
+      <option value="Search Engine Optimization">Search Engine Optimization</option>
+      <option value="Electrical Deploma">Electrical Deploma</option>
+      <option value="Electronic Diploma">Electronic Diploma</option>
+      <option value="Guest Posting">Guest Posting</option>
+      <option value="Word Press">Word Press</option>
+
+     </select>
+    </div>
+    <div>
+      <input
+        type="number"
+        name=""
+        id="input_field"
+        placeholder="Enter your Roll No"
+        class="p-2"
+        style="height: 50px"
+        onchange="findResult(event)"
+      />
+    </div>
+      <div
+        class="btn p-2 bg-primary"
+        style="height: 50px; width: 50px"
+        onclick="getResult()"
+      >
+        <i class="fa fa-2x fa-search text-white" aria-hidden="true"></i>
+      </div>
+      <!-- <button>find Result</button> -->
+    </div>
+    <div class="d-flex w-100 justify-content-center p-2 mt-2">
+      <table id="res_table" class="w-75 text-center"></table>
+    </div>
+    
   <div class="p-2 mt-lg-3 mt-1">
     <div class="text-center">
 
@@ -130,6 +240,7 @@
     </div>
   </div>
 
+  <a href="../Results/ResultsData/SklInsStudents.json"></a>
 
   <div id="footer"></div>
 
@@ -962,6 +1073,59 @@ By understanding these future aspects, scope, and emerging trends, individuals c
     //    modal.className = "Modal_Hidden"
     // }
   </script>
+
+<script>
+  let courseSelected = '';
+  let session = '';
+  let students = '';
+  
+  fetch('../Results/ResultsData/SklInsStudents.json')
+  .then(res => res.json())
+  .then(stud =>{
+    students = stud.students
+  console.log("stud",stud.students)
+  
+  }).catch(err=>console.log("fetch_Error",err));
+  
+        const getValue=()=>{
+           courseSelected = document.getElementById("course_selection").value;
+           session = document.getElementById("Session").value;
+          }
+         
+          const table = document.getElementById("res_table");
+          const rollNoInput = document.getElementById("rollNo");
+    
+          const renderTable = (data) => {
+            table.innerHTML = "";
+            data?.forEach((stu) => {
+              
+              const row = `<tr><td>${stu.rollNo}</td><td>${stu.name}</td><td>${stu.course}</td></tr> <tr id='img_container'><td colspan=3><img id='certificate_img' src=${stu.certificate} alt="" /></tr>`;
+              table.innerHTML += row;
+            });
+          };
+    
+          let rollNo = "";
+          const findResult = (e) => {
+            rollNo = parseInt(e.target.value);
+          };
+    
+          const getResult = () => {
+            const filteredStudents = students.filter(
+              (stu) => stu.rollNo === rollNo && stu.course === courseSelected && stu.session === session
+            );
+    
+            if (!isNaN(rollNo) && filteredStudents?.length > 0) {
+              // alert("Student Exist");
+              renderTable(filteredStudents);
+            } else if (isNaN(rollNo)) {
+              renderTable();
+              alert("Please Enter Roll No");
+            } else {
+              alert("No Any Student With This Roll No");
+              table.innerHTML = `<tr><td>No Student Found</td></tr>`;
+            }
+          };
+          </script>
 
   <script>
     $("#navbar").load("../Navbar/index.html");
