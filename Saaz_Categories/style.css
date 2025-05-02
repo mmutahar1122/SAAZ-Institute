@@ -148,7 +148,7 @@
     border: none;
     border-bottom: 1px solid white;
     line-height: 40px;
-    background-color: orangered;
+    /* background-color: orangered;  */
     line-height: 50px;
   }
 
@@ -156,6 +156,40 @@
     align-items: center;
     font-size: 25px;
   }
+
+  .img_container {
+    width: 170px;
+  }
+  #input_field {
+        width: 300px;
+        height: 50px;
+        font-size: large;
+      }
+      #res_table tr,
+      #res_table td {
+        border: 1px solid black;
+      }
+      #res_table tr {
+        height: 50px;
+      }
+      #certificate_img {
+        height: 100%;
+        width: 100%;
+      }
+      #img_container{
+          padding: 5px;
+      }
+      #course_selection, #Session{
+        width: 300px;
+        height: 50px;
+        font-size: large;
+      }
+      .rollNo_detailContainer{
+        display: flex;
+        justify-content: center;
+      }
+    
+
 #typing_Comp_services{
 background-color: orangered;
 color: white;
@@ -231,9 +265,11 @@ text-align: center ;
       align-items: center;
       font-size: 15px;
     }
+    .rollNo_detailContainer{
+      display: block;
+      
+    }
   }
-
-
 
 
 
