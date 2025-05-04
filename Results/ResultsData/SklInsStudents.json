@@ -6,126 +6,126 @@
       "name": "ABID HUSNAIN",
       "rollNo": 183305,
       "course": "MS OFFICE MANAGEMENT",
-      "certificate": "Certificates/abid.JPG",
+      "certificate": "../Certificates/abid.JPG",
       "session": "2025"
     },
     {
       "name": "ALI AHMAD",
       "rollNo": 183306,
       "course": "MS OFFICE MANAGEMENT",
-      "certificate": "Certificates/ali_ahmad.JPG",
+      "certificate": "../Certificates/ali_ahmad.JPG",
       "session": "2025"
     },
     {
       "name": "ANEETA AASHRAF",
       "rollNo": 153302,
       "course": "DIPLOMA IN IT",
-      "certificate": "Certificates/Aneeta_Ashraf.JPG",
+      "certificate": "../Certificates/Aneeta_Ashraf.JPG",
       "session": "2025"
     },
     {
       "name": "Asifa",
       "rollNo": 183308,
       "course": "MS OFFICE MANAGEMENT",
-      "certificate": "Certificates/asifa.JPG",
+      "certificate": "../Certificates/asifa.JPG",
       "session": "2025"
     },
     {
       "name": "MUHAMMAD SUBHAN",
       "rollNo": 183302,
       "course": "GRAPHIC DESIGNER",
-      "certificate": "Certificates/M_Subhan.JPG",
+      "certificate": "../Certificates/M_Subhan.JPG",
       "session": "2025"
     },
     {
       "name": "MUAAZ HAIDER",
       "rollNo": 183302,
       "course": "MS OFFICE MANAGEMENT",
-      "certificate": "Certificates/Muaz.JPG",
+      "certificate": "../Certificates/Muaz.JPG",
       "session": "2025"
     },
     {
       "name": "MUNEEBA ABID",
       "rollNo": 193301,
       "course": "GRAPHIC DESIGNER",
-      "certificate": "Certificates/Muneeba_abid.JPG",
+      "certificate": "../Certificates/Muneeba_abid.JPG",
       "session": "2025"
     },
     {
       "name": "SAWAIRA",
       "rollNo": 183304,
       "course": "MS OFFICE MANAGEMENT",
-      "certificate": "Certificates/Sawaira.JPG",
+      "certificate": "../Certificates/Sawaira.JPG",
       "session": "2025"
     },
     {
       "name": "MUHAMMAD SUBHAN",
       "rollNo": 183301,
       "course": "MS OFFICE MANAGEMENT",
-      "certificate": "Certificates/Subhan.JPG",
+      "certificate": "../Certificates/Subhan.JPG",
       "session": "2024"
     },
     {
       "name": "MUNEEBA ABID",
       "rollNo": 193301,
       "course": "GRAPHIC DESIGNER",
-      "certificate": "Certificates/MUNEEBA_ABID.jpeg",
+      "certificate": "../Certificates/MUNEEBA_ABID.jpeg",
       "session": "2025"
     },
     {
       "name": "MUHAMMAD HUSNAIN",
       "rollNo": 203301,
       "course": "WEB DEVELOPMENT",
-      "certificate": "Certificates/M_HUSNAIN.jpeg",
+      "certificate": "../Certificates/M_HUSNAIN.jpeg",
       "session": "2025"
     },
     {
       "name": "TALHA KHAN",
       "rollNo": 183309,
       "course": "MS OFFICE MANAGEMENT",
-      "certificate": "Certificates/TALHA_KHAN.jpeg",
+      "certificate": "../Certificates/TALHA_KHAN.jpeg",
       "session": "2025"
     },
     {
       "name": "AYESHA HUSSAIN",
       "rollNo": 183307,
       "course": "MS OFFICE MANAGEMENT",
-      "certificate": "Certificates/AYESHA_HUSSAIN.jpeg",
+      "certificate": "../Certificates/AYESHA_HUSSAIN.jpeg",
       "session": "2025"
     },
     {
       "name": "ZAIBA  SHAHZADI",
       "rollNo": 183303,
       "course": "MS OFFICE MANAGEMENT",
-      "certificate": "Certificates/ZAIBA_SHAHZADI.jpeg",
+      "certificate": "../Certificates/ZAIBA_SHAHZADI.jpeg",
       "session": "2025"
     },
     {
       "name": "MUHAMMAD TAHA",
       "rollNo": 183218,
       "course": "MS OFFICE MANAGEMENT",
-      "certificate": "Certificates/M_TAHA.jpeg",
+      "certificate": "../Certificates/M_TAHA.jpeg",
       "session": "2024"
     },
     {
       "name": "MUNEED UR REHMAN",
       "rollNo": 183245,
       "course": "MS OFFICE MANAGEMENT",
-      "certificate": "Certificates/MUNEEB_UR_REHMAN.jpeg",
+      "certificate": "../Certificates/MUNEEB_UR_REHMAN.jpeg",
       "session": "2024"
     },
     {
       "name": "IFRA SHAFIQUE",
       "rollNo": 183277,
       "course": "MS OFFICE MANAGEMENT",
-      "certificate": "Certificates/IFRA.jpeg",
+      "certificate": "../Certificates/IFRA.jpeg",
       "session": "2024"
     },
     {
       "name": "MUHAMMAD ALI",
       "rollNo": 183249,
       "course": "MS OFFICE MANAGEMENT",
-      "certificate": "Certificates/M_ALI.jpeg",
+      "certificate": "../Certificates/M_ALI.jpeg",
       "session": "2024"
     }
  ]}
