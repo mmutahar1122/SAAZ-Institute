@@ -143,12 +143,15 @@
   #services_portal a {
     color: white;
   }
+  #services_portal tr {
+        background-color: orangered; 
+
+  }
 
   table tr {
     border: none;
     border-bottom: 1px solid white;
     line-height: 40px;
-    /* background-color: orangered;  */
     line-height: 50px;
   }
 
