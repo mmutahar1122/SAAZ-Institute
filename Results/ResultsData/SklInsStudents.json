@@ -127,6 +127,104 @@
       "course": "MS OFFICE MANAGEMENT",
       "certificate": "../Certificates/M_ALI.jpeg",
       "session": "2024"
+    },
+    {
+      "name": "EMAN FATIMA",
+      "rollNo": 263301,
+      "course": "VIDEO GRAPHY",
+      "certificate": "../Certificates/Eman_Jawad.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "ALI ASGHAR",
+      "rollNo": 233301,
+      "course": "WEB DEVELOPMENT",
+      "certificate": "../Certificates/Ali_Asghar.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "KHADEEHA TUL KUBRA",
+      "rollNo": 313301,
+      "course": "SPOKEN ENGLISH",
+      "certificate": "../Certificates/Khadeeja.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "ABDULLAH IMTIAZ",
+      "rollNo": 303301,
+      "course": "IELTS",
+      "certificate": "../Certificates/Abdullah_Imtiaz.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "ALI AHMAD",
+      "rollNo": 253301,
+      "course": "SEO",
+      "certificate": "../Certificates/Ali_Ahmad.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "FIZA NASIR",
+      "rollNo": 293301,
+      "course": "FREE LANCING",
+      "certificate": "../Certificates/fiza_Nasir.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "NEHA MOBEEN",
+      "rollNo": 283301,
+      "course": "E-COMMERCE",
+      "certificate": "../Certificates/Neha_Mobeen.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "ARHAM JAMSHAID",
+      "rollNo": 273301,
+      "course": "DIGITAL MARKETING",
+      "certificate": "../Certificates/Arham_Jamshaid.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "ALI RAZA",
+      "rollNo": 223301,
+      "course": "CYBER SECURITY",
+      "certificate": "../Certificates/Ali_Raza.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "MINAHIL FATIMA",
+      "rollNo": 213301,
+      "course": "Diploma in Database Management",
+      "certificate": "../Certificates/Minahal.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "NAILA FATIMA",
+      "rollNo": 243301,
+      "course": "JAVA",
+      "certificate": "../Certificates/Naila_Fatima.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "TABASSAM",
+      "rollNo": 233301,
+      "course": "AUTO CAD",
+      "certificate": "../Certificates/Tabbasaim.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "ALIZA ABRAR",
+      "rollNo": 333301,
+      "course": "AMAZON VA",
+      "certificate": "../Certificates/Aliza_Ibrar.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "NOOR FATIMA",
+      "rollNo": 323301,
+      "course": "AMAZON DROPSHIPPING",
+      "certificate": "../Certificates/NOOR_Hayyat.JPG",
+      "session": "2025"
     }
  ]}
 

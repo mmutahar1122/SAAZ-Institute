@@ -66,8 +66,9 @@
      </select>
     </div>
     <div>
-    <select name="" id="course_selection"   class="p-2" onchange="getValue()">
-      <option value="Amazon" >Amazon</option>
+      <input placeholder="Select Cource" list="cources" class="p-2" id="course_selection" onchange="getValue()"/>
+      <datalist id="cources">
+       <option value="Amazon" >Amazon</option>
       <option value="Web Development">Web Development</option>
       <option value="Diploma in Database Management">Diploma in Database Management</option>
       <option value="Python Developer">Python Developer</option>
@@ -77,12 +78,12 @@
       <option value="DIPLOMA IN IT">diploma In IT</option>
       <option value="Video Graphy">Video Graphy</option>
       <option value="Graphic Designer">Graphic Designing</option>
-      <option value="Auto Cad 2d/3d">Auto Cad 2d/3d</option>
+      <option value="Auto Cad">Auto Cad 2d/3d</option>
       <option value="shopify">Shopify</option>
       <option value="Free Lancing">Free Lancing</option>
       <option value="Video Graphy">Video Graphy</option>
       <option value="Diploma in Financial Management">Diploma in Financial Management</option>
-      <option value="E-Commerece">E-Commerece</option>
+      <option value="E-Commerce">E-Commerce</option>
       <option value="Ethical Hacking">Ethical Hacking</option>
       <option value="CCNA with Ethical Hacking">CCNA with Ethical Hacking</option>
       <option value="Desktop Application">Desktop Application</option>
@@ -100,8 +101,7 @@
       <option value="Electronic Diploma">Electronic Diploma</option>
       <option value="Guest Posting">Guest Posting</option>
       <option value="Word Press">Word Press</option>
-
-     </select>
+      </datalist>
     </div>
     <div>
       <input
@@ -142,7 +142,9 @@ console.log("stud",stud.students)
 }).catch(err=>console.log("fetch_Error",err));
 
       const getValue=()=>{
-         courseSelected = document.getElementById("course_selection").value;
+         courseSelected = document.getElementById("course_selection").value.toUpperCase();
+
+         console.info("courseSelected",courseSelected)
          session = document.getElementById("Session").value;
         }
        
@@ -161,6 +163,7 @@ console.log("stud",stud.students)
         let rollNo = "";
         const findResult = (e) => {
           rollNo = parseInt(e.target.value);
+          console.info("roll no", rollNo)
         };
   
         const getResult = () => {
