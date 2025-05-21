@@ -225,6 +225,97 @@
       "course": "AMAZON DROPSHIPPING",
       "certificate": "../Certificates/NOOR_Hayyat.JPG",
       "session": "2025"
+    },
+    {
+      "name": "ALEEZA NOOR",
+      "rollNo": 383301,
+      "course": "PYTHON",
+      "certificate": "../Certificates/Aleeza_Noor.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "Zaid Talha",
+      "rollNo": 473301,
+      "course": "WORD PRESS",
+      "certificate": "../Certificates/zaid_Talha.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "TALHA MANAWAR",
+      "rollNo": 433301,
+      "course": "DESKTOP APPLICATION",
+      "certificate": "../Certificates/talha_manawar.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "JAWARIA SALEEM",
+      "rollNo": 373301,
+      "course": "ETHICAL HACKING",
+      "certificate": "../Certificates/Jawaria_Saleem.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "FARWA SHAH",
+      "rollNo": 363301,
+      "course": "FINANCIAL MANAGEMENT",
+      "certificate": "../Certificates/farwa_Shah.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "Alisha Asif",
+      "rollNo": 353301,
+      "course": "LIBRARIONSHIP",
+      "certificate": "../Certificates/Alisha_Asif.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "IBRAHIM IRFAN",
+      "rollNo": 403301,
+      "course": "CCNA",
+      "certificate": "../Certificates/Ibrahim_Irfan.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "MUSA RIZWAN",
+      "rollNo": 463301,
+      "course": "GUEST POSTING",
+      "certificate": "../Certificates/Musa_Rizwan.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "FATIMA MAHAM",
+      "rollNo": 343301,
+      "course": "ANDROID DEVELOPMENT",
+      "certificate": "../Certificates/Fatima_Maham.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "ZAID HASSAN",
+      "rollNo": 423301,
+      "course": "SHOPIFY",
+      "certificate": "../Certificates/ZaidHassan.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "AHMAD FAHEEM",
+      "rollNo": 443302,
+      "course": "ELECTRICIAN",
+      "certificate": "../Certificates/Ahmad_Faheem.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "MUNTAHA ASIM",
+      "rollNo": 473302,
+      "course": "WORD PRESS",
+      "certificate": "../Certificates/Muntaha_Asim.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "MLIHA NOOR",
+      "rollNo": 463302,
+      "course": "SHOPIFY",
+      "certificate": "../Certificates/Maliha_Noor.JPG",
+      "session": "2025"
     }
  ]}
 
