@@ -316,6 +316,76 @@
       "course": "SHOPIFY",
       "certificate": "../Certificates/Maliha_Noor.JPG",
       "session": "2025"
+    },
+    {
+      "name": "ITRAT ZAHRA",
+      "rollNo": 343302,
+      "course": "ANDROID DEVELOPMENT",
+      "certificate": "../Certificates/Itrat_Zahra.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "FARHAN UMAN",
+      "rollNo": 303302,
+      "course": "IELTS",
+      "certificate": "../Certificates/Farhan_Umar.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "ANAYA KHALID",
+      "rollNo": 373302,
+      "course": "ETHICAL HACKING",
+      "certificate": "../Certificates/Anaya_Khalid.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "MALAIKA NOOR",
+      "rollNo": 383302,
+      "course": "PYTHON",
+      "certificate": "../Certificates/Malaika_Noor.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "TABISH HUSSAIN",
+      "rollNo": 363302,
+      "course": "TECH MANAGEMENT",
+      "certificate": "../Certificates/Tabish_Hussain.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "KHURRAM AHMAD",
+      "rollNo": 353302,
+      "course": "LIBRARIONSHIP",
+      "certificate": "../Certificates/KhurramAhmad.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "HADIA NOOR",
+      "rollNo": 403302,
+      "course": "CCNA",
+      "certificate": "../Certificates/Hadia_Noor.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "MINHA FATIMA",
+      "rollNo": 393302,
+      "course": "TECH MANAGEMENT",
+      "certificate": "../Certificates/Minha_Fatima.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "ASIFA LIAQUAT",
+      "rollNo": 323302,
+      "course": "AMAZON DROPSHIPPING",
+      "certificate": "../Certificates/Asifa_liaqat.JPG",
+      "session": "2025"
+    },
+    {
+      "name": "JANNAT NOOR",
+      "rollNo": 313302,
+      "course": "SPOKEN ENGLISH",
+      "certificate": "../Certificates/Jannat_Noor.JPG",
+      "session": "2025"
     }
  ]}
 
