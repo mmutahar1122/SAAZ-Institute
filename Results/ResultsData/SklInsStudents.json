@@ -386,6 +386,175 @@
       "course": "SPOKEN ENGLISH",
       "certificate": "../Certificates/Jannat_Noor.JPG",
       "session": "2025"
+    },
+    {
+      "name": "UMME HANI",
+      "rollNo": 805001,
+      "course": "DIPLOMA IN IT",
+      "certificate": "../Certificates/Umme_Hani.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "USMA",
+      "rollNo": 273301,
+      "course": "DIGITAL MARKETING",
+      "certificate": "../Certificates/Usma.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "MUHAMMAD ABU BAKAR",
+      "rollNo": 273305,
+      "course": "DIGITAL MARKETING",
+      "certificate": "../Certificates/Abu_Baker.jpej",
+      "session": "2025"
+    },
+    {
+      "name": "AHMAD RAZA",
+      "rollNo": 193309,
+      "course": "GRAPHIC DESIGNER",
+      "certificate": "../Certificates/Ahamd_Raza.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "AMJAD RAZA",
+      "rollNo": 193310,
+      "course": "GRAPHIC DESIGNER",
+      "certificate": "../Certificates/Amjad_Raza.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "AREEJ FATIMA",
+      "rollNo": 193303,
+      "course": "GRAPHIC DESIGNER",
+      "certificate": "../Certificates/Areej_Fatima.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "MUHAMMAD AWAIS",
+      "rollNo": 273307,
+      "course": "DIGITAL MARKETING",
+      "certificate": "../Certificates/Awais.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "BILAL SABIR",
+      "rollNo": 273306,
+      "course": "DIGITAL MARKETING",
+      "certificate": "../Certificates/Bilal_Sabir.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "EMAN SARWAR",
+      "rollNo": 183320,
+      "course": "GRAPHIC DESIGNER",
+      "certificate": "../Certificates/Eman_Sarwar.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "EMAN SARWAR",
+      "rollNo": 183320,
+      "course": "MS OFFICE MANAGEMENT",
+      "certificate": "../Certificates/Eman_Sarwar.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "ESHA EMAN",
+      "rollNo": 183317,
+      "course": "MS OFFICE MANAGEMENT",
+      "certificate": "../Certificates/Esha_Eman.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "FIZZA NOOR",
+      "rollNo": 193305,
+      "course": "GRAPHIC DESIGNER",
+      "certificate": "../Certificates/Fizza_Noor.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "GHULAM HUSNAIN",
+      "rollNo": 183316,
+      "course": "MS OFFICE MANAGEMENT",
+      "certificate": "../Certificates/Ghulam_Husnain.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "HAIDER RAHMAN",
+      "rollNo": 193307,
+      "course": "GRAPHIC DESIGNER",
+      "certificate": "../Certificates/Haider_Rahman.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "HAMMAD ALI",
+      "rollNo": 183314,
+      "course": "MS OFFICE MANAGEMENT",
+      "certificate": "../Certificates/Hammad_Ali.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "KAINAT",
+      "rollNo": 193302,
+      "course": "GRAPHIC DESIGNER",
+      "certificate": "../Certificates/Kainat.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "MEHAK SHAHZADI",
+      "rollNo": 183318,
+      "course": "MS OFFICE MANAGEMENT",
+      "certificate": "../Certificates/Mehak_Shahzadi.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "MUHAMMAD MUNEEB",
+      "rollNo": 183312,
+      "course": "MS OFFICE MANAGEMENT",
+      "certificate": "../Certificates/Muneeb.jpeg",
+      "session": "2025"
+    }
+    ,
+    {
+      "name": "RIMSHA RIAZ",
+      "rollNo": 193308,
+      "course": "GRAPHIC DESIGNER",
+      "certificate": "../Certificates/Rimsha_Riaz.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "MUHAMMAD ROHAN",
+      "rollNo": 183311,
+      "course": "MS OFFICE MANAGEMENT",
+      "certificate": "../Certificates/Rohan.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "RUBAB",
+      "rollNo": 273302,
+      "course": "DIGITAL MARKETING",
+      "certificate": "../Certificates/rubab.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "SAMEER MASHI",
+      "rollNo": 193301,
+      "course": "GRAPHIC DESIGNER",
+      "certificate": "../Certificates/Sameer_Mashi.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "SHEEZA NOOR",
+      "rollNo": 183313,
+      "course": "MS OFFICE MANAGEMENT",
+      "certificate": "../Certificates/Sheeza_Noor.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "ZAINAB SHAHZADI",
+      "rollNo": 193304,
+      "course": "GRAPHIC DESIGNER",
+      "certificate": "../Certificates/Zainab_Shahzadi.jpeg",
+      "session": "2025"
     }
  ]}
 
