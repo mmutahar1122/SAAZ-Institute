@@ -49,7 +49,7 @@
       "rollNo": 193301,
       "course": "GRAPHIC DESIGNER",
       "certificate": "../Certificates/Muneeba_abid.JPG",
-      "session": "2025"
+      "session": "2024"
     },
     {
       "name": "SAWAIRA",
@@ -66,10 +66,10 @@
       "session": "2024"
     },
     {
-      "name": "MUNEEBA ABID",
-      "rollNo": 193301,
-      "course": "GRAPHIC DESIGNER",
-      "certificate": "../Certificates/MUNEEBA_ABID.jpeg",
+      "name": "NEHA SARWAR",
+      "rollNo": 183319,
+      "course": "MS OFFICE MANAGEMENT",
+      "certificate": "../Certificates/Neha_Sarwar.jpeg",
       "session": "2025"
     },
     {
@@ -139,7 +139,7 @@
       "name": "ALI ASGHAR",
       "rollNo": 233301,
       "course": "WEB DEVELOPMENT",
-      "certificate": "../Certificates/Ali_Asghar.JPG",
+      "certificate": "../Certificates/Ali_Asghar.jpeg",
       "session": "2025"
     },
     {
@@ -160,7 +160,7 @@
       "name": "ALI AHMAD",
       "rollNo": 253301,
       "course": "SEO",
-      "certificate": "../Certificates/Ali_Ahmad.JPG",
+      "certificate": "../Certificates/Ali_Ahmad.jpeg",
       "session": "2025"
     },
     {
@@ -178,17 +178,10 @@
       "session": "2025"
     },
     {
-      "name": "ARHAM JAMSHAID",
-      "rollNo": 273301,
-      "course": "DIGITAL MARKETING",
-      "certificate": "../Certificates/Arham_Jamshaid.JPG",
-      "session": "2025"
-    },
-    {
       "name": "ALI RAZA",
       "rollNo": 223301,
       "course": "CYBER SECURITY",
-      "certificate": "../Certificates/Ali_Raza.JPG",
+      "certificate": "../Certificates/Ali_Raza.jpeg",
       "session": "2025"
     },
     {
@@ -216,7 +209,7 @@
       "name": "ALIZA ABRAR",
       "rollNo": 333301,
       "course": "AMAZON VA",
-      "certificate": "../Certificates/Aliza_Ibrar.JPG",
+      "certificate": "../Certificates/Aliza_Ibrar.jpeg",
       "session": "2025"
     },
     {
@@ -224,13 +217,6 @@
       "rollNo": 323301,
       "course": "AMAZON DROPSHIPPING",
       "certificate": "../Certificates/NOOR_Hayyat.JPG",
-      "session": "2025"
-    },
-    {
-      "name": "ALEEZA NOOR",
-      "rollNo": 383301,
-      "course": "PYTHON",
-      "certificate": "../Certificates/Aleeza_Noor.JPG",
       "session": "2025"
     },
     {
@@ -258,21 +244,21 @@
       "name": "FARWA SHAH",
       "rollNo": 363301,
       "course": "FINANCIAL MANAGEMENT",
-      "certificate": "../Certificates/farwa_Shah.JPG",
+      "certificate": "../Certificates/Farwa_Shah.jpeg",
       "session": "2025"
     },
     {
       "name": "Alisha Asif",
       "rollNo": 353301,
       "course": "LIBRARIONSHIP",
-      "certificate": "../Certificates/Alisha_Asif.JPG",
+      "certificate": "../Certificates/Alisha_Asif.jpeg",
       "session": "2025"
     },
     {
       "name": "IBRAHIM IRFAN",
       "rollNo": 403301,
-      "course": "CCNA",
-      "certificate": "../Certificates/Ibrahim_Irfan.JPG",
+      "course": "CCNA WITH ETHICAL HACKING",
+      "certificate": "../Certificates/Ibrahim_Irfan.jpeg",
       "session": "2025"
     },
     {
@@ -286,7 +272,7 @@
       "name": "FATIMA MAHAM",
       "rollNo": 343301,
       "course": "ANDROID DEVELOPMENT",
-      "certificate": "../Certificates/Fatima_Maham.JPG",
+      "certificate": "../Certificates/Fatima_Maham.jpeg",
       "session": "2025"
     },
     {
@@ -321,21 +307,21 @@
       "name": "ITRAT ZAHRA",
       "rollNo": 343302,
       "course": "ANDROID DEVELOPMENT",
-      "certificate": "../Certificates/Itrat_Zahra.JPG",
+      "certificate": "../Certificates/Itrat_Zahra.jpeg",
       "session": "2025"
     },
     {
       "name": "FARHAN UMAN",
       "rollNo": 303302,
       "course": "IELTS",
-      "certificate": "../Certificates/Farhan_Umar.JPG",
+      "certificate": "../Certificates/Farhan_Umar.jpeg",
       "session": "2025"
     },
     {
       "name": "ANAYA KHALID",
       "rollNo": 373302,
       "course": "ETHICAL HACKING",
-      "certificate": "../Certificates/Anaya_Khalid.JPG",
+      "certificate": "../Certificates/Anaya_Khalid.jpeg",
       "session": "2025"
     },
     {
@@ -362,8 +348,8 @@
     {
       "name": "HADIA NOOR",
       "rollNo": 403302,
-      "course": "CCNA",
-      "certificate": "../Certificates/Hadia_Noor.JPG",
+      "course": "CCNA WITH ETHICAL HACKING",
+      "certificate": "../Certificates/Hadia_Noor.jpeg",
       "session": "2025"
     },
     {
@@ -377,7 +363,7 @@
       "name": "ASIFA LIAQUAT",
       "rollNo": 323302,
       "course": "AMAZON DROPSHIPPING",
-      "certificate": "../Certificates/Asifa_liaqat.JPG",
+      "certificate": "../Certificates/Asifa_liaqat.jpeg",
       "session": "2025"
     },
     {
@@ -398,28 +384,49 @@
       "name": "USMA",
       "rollNo": 273301,
       "course": "DIGITAL MARKETING",
-      "certificate": "../Certificates/Usma.jpeg",
+      "certificate": "../Certificates/Usma273301.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "FIZZA NOOR",
+      "rollNo": 273304,
+      "course": "DIGITAL MARKETING",
+      "certificate": "../Certificates/Fizza_Noor(2).jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "FIZZA NOOR",
+      "rollNo": 193305,
+      "course": "DIGITAL MARKETING",
+      "certificate": "../Certificates/Fizza_Noor.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "ADNAN ALI",
+      "rollNo": 193306,
+      "course": "GRAPHIC DESIGNER",
+      "certificate": "../Certificates/Adnan_Ali193306.jpeg",
       "session": "2025"
     },
     {
       "name": "MUHAMMAD ABU BAKAR",
       "rollNo": 273305,
       "course": "DIGITAL MARKETING",
-      "certificate": "../Certificates/Abu_Baker.jpej",
+      "certificate": "../Certificates/Abu_Baker273305.jpeg",
       "session": "2025"
     },
     {
       "name": "AHMAD RAZA",
       "rollNo": 193309,
       "course": "GRAPHIC DESIGNER",
-      "certificate": "../Certificates/Ahamd_Raza.jpeg",
+      "certificate": "../Certificates/Ahmad_Raza193309.jpeg",
       "session": "2025"
     },
     {
       "name": "AMJAD RAZA",
       "rollNo": 193310,
       "course": "GRAPHIC DESIGNER",
-      "certificate": "../Certificates/Amjad_Raza.jpeg",
+      "certificate": "../Certificates/Amjad_Raza193310.jpeg",
       "session": "2025"
     },
     {
@@ -433,21 +440,14 @@
       "name": "MUHAMMAD AWAIS",
       "rollNo": 273307,
       "course": "DIGITAL MARKETING",
-      "certificate": "../Certificates/Awais.jpeg",
+      "certificate": "../Certificates/Awais273307.jpeg",
       "session": "2025"
     },
     {
       "name": "BILAL SABIR",
       "rollNo": 273306,
       "course": "DIGITAL MARKETING",
-      "certificate": "../Certificates/Bilal_Sabir.jpeg",
-      "session": "2025"
-    },
-    {
-      "name": "EMAN SARWAR",
-      "rollNo": 183320,
-      "course": "GRAPHIC DESIGNER",
-      "certificate": "../Certificates/Eman_Sarwar.jpeg",
+      "certificate": "../Certificates/Bilal_Sabir273306.jpeg",
       "session": "2025"
     },
     {
@@ -455,13 +455,27 @@
       "rollNo": 183320,
       "course": "MS OFFICE MANAGEMENT",
       "certificate": "../Certificates/Eman_Sarwar.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "ALI AWAIS",
+      "rollNo": 183321,
+      "course": "MS OFFICE MANAGEMENT",
+      "certificate": "../Certificates/Ali_Awais183321.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "Usman",
+      "rollNo": 183323,
+      "course": "MS OFFICE MANAGEMENT",
+      "certificate": "../Certificates/M_Usman_183323.jpeg",
       "session": "2025"
     },
     {
       "name": "ESHA EMAN",
       "rollNo": 183317,
       "course": "MS OFFICE MANAGEMENT",
-      "certificate": "../Certificates/Esha_Eman.jpeg",
+      "certificate": "../Certificates/Esha_Eman183317.jpeg",
       "session": "2025"
     },
     {
@@ -475,21 +489,28 @@
       "name": "GHULAM HUSNAIN",
       "rollNo": 183316,
       "course": "MS OFFICE MANAGEMENT",
-      "certificate": "../Certificates/Ghulam_Husnain.jpeg",
+      "certificate": "../Certificates/Ghulam_Husnain183316.jpeg",
       "session": "2025"
     },
     {
       "name": "HAIDER RAHMAN",
       "rollNo": 193307,
       "course": "GRAPHIC DESIGNER",
-      "certificate": "../Certificates/Haider_Rahman.jpeg",
+      "certificate": "../Certificates/Haider_Rahman193307.jpeg",
       "session": "2025"
     },
     {
       "name": "HAMMAD ALI",
       "rollNo": 183314,
       "course": "MS OFFICE MANAGEMENT",
-      "certificate": "../Certificates/Hammad_Ali.jpeg",
+      "certificate": "../Certificates/Hammad_Ali183314.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "AROOJ FATIMA",
+      "rollNo": 183315,
+      "course": "MS OFFICE MANAGEMENT",
+      "certificate": "../Certificates/Arooj_Fatima183315.jpeg",
       "session": "2025"
     },
     {
@@ -503,14 +524,14 @@
       "name": "MEHAK SHAHZADI",
       "rollNo": 183318,
       "course": "MS OFFICE MANAGEMENT",
-      "certificate": "../Certificates/Mehak_Shahzadi.jpeg",
+      "certificate": "../Certificates/Mehak_Shahzadi183318.jpeg",
       "session": "2025"
     },
     {
       "name": "MUHAMMAD MUNEEB",
       "rollNo": 183312,
       "course": "MS OFFICE MANAGEMENT",
-      "certificate": "../Certificates/Muneeb.jpeg",
+      "certificate": "../Certificates/Muneeb183312.jpeg",
       "session": "2025"
     }
     ,
@@ -525,35 +546,83 @@
       "name": "MUHAMMAD ROHAN",
       "rollNo": 183311,
       "course": "MS OFFICE MANAGEMENT",
-      "certificate": "../Certificates/Rohan.jpeg",
+      "certificate": "../Certificates/Rohan183311.jpeg",
       "session": "2025"
     },
     {
       "name": "RUBAB",
       "rollNo": 273302,
       "course": "DIGITAL MARKETING",
-      "certificate": "../Certificates/rubab.jpeg",
+      "certificate": "../Certificates/Rubab273302.jpeg",
+      "session": "2025"
+    }, {
+      "name": "AMJAD RAZA",
+      "rollNo": 273303,
+      "course": "DIGITAL MARKETING",
+      "certificate": "../Certificates/Amjad_Raza.jpeg",
       "session": "2025"
     },
     {
       "name": "SAMEER MASHI",
       "rollNo": 193301,
       "course": "GRAPHIC DESIGNER",
-      "certificate": "../Certificates/Sameer_Mashi.jpeg",
+      "certificate": "../Certificates/Sameer_Masih193301.jpeg",
       "session": "2025"
     },
     {
       "name": "SHEEZA NOOR",
       "rollNo": 183313,
       "course": "MS OFFICE MANAGEMENT",
-      "certificate": "../Certificates/Sheeza_Noor.jpeg",
+      "certificate": "../Certificates/Sheeza_Noor183313.jpeg",
       "session": "2025"
     },
     {
       "name": "ZAINAB SHAHZADI",
       "rollNo": 193304,
       "course": "GRAPHIC DESIGNER",
-      "certificate": "../Certificates/Zainab_Shahzadi.jpeg",
+      "certificate": "../Certificates/Zainab_Shahzadi193304.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "ABDULLAH AMJAD",
+      "rollNo": 443302,
+      "course": "ELECTRICAL",
+      "certificate": "../Certificates/Abdullah_Amjad.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "ABDULLAH IMTIAZ",
+      "rollNo": 303301,
+      "course": "IELTS",
+      "certificate": "../Certificates/Abdullah_Imtiaz.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "AHMAD FAHEEM",
+      "rollNo": 443302,
+      "course": "ELECTRICIAN",
+      "certificate": "../Certificates/Ahmad_Faheem.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "ALEEZA NOOR",
+      "rollNo": 383301,
+      "course": "PYTHON",
+      "certificate": "../Certificates/Aleeza_Noor.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "AYESHA NAZ",
+      "rollNo": 413302,
+      "course": "CCNP",
+      "certificate": "../Certificates/Ayesha_Naz.jpeg",
+      "session": "2025"
+    },
+    {
+      "name": "AZRA BILAWAL",
+      "rollNo": 393301,
+      "course": "TECH MANAGEMENT",
+      "certificate": "../Certificates/Azra_Bilawal.jpeg",
       "session": "2025"
     }
  ]}
