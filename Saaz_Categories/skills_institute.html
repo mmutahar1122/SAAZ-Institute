@@ -60,11 +60,11 @@
     </div>
     <div>
     <select name="" id="course_selection"   class="p-2" onchange="getValue()">
-      <option value="">
+      <!-- <option value="">
       <ul>
         <li></li>
       </ul>
-    </option>
+    </option> -->
       <option value="Amazon">Amazon</option>
       <option value="Web Development">Web Development</option>
       <option value="Diploma in Database Management">Diploma in Database Management</option>
@@ -72,6 +72,7 @@
       <option value="Software Skills">Software Skills</option>
       <option value="MS OFFICE MANAGEMENT">MS Office Management</option>
       <option value="Information Technology">Diploma Information Technology</option>
+      <option value="Digital Marketing">Digital Marketing</option>
       <option value="DIPLOMA IN IT">diploma In IT</option>
       <option value="Video Graphy">Video Graphy</option>
       <option value="Graphic Designer">Graphic Designing</option>
@@ -87,7 +88,6 @@
       <option value="Amazon VA">Amazon VA</option>
       <option value="Android Development">Android Development</option>
       <option value="Diploma in Librarianship">Diploma in Librarianship</option>
-      <option value="Digital Marketing">Digital Marketing</option>
       <option value="IELTS">IELTS</option>
       <option value="Diploma in Technical Management">Diploma in Technical Management</option>
       <option value="Spoken English">Spoken English</option>
@@ -1070,7 +1070,7 @@ By understanding these future aspects, scope, and emerging trends, individuals c
   fetch('../Results/ResultsData/SklInsStudents.json')
   .then(res => res.json())
   .then(stud =>{
-    students = stud.students
+    students = stud.students;
   console.log("stud",stud.students)
   
   }).catch(err=>console.log("fetch_Error",err));
@@ -1096,14 +1096,13 @@ By understanding these future aspects, scope, and emerging trends, individuals c
           const findResult = (e) => {
             rollNo = parseInt(e.target.value);
           };
-    
           const getResult = () => {
             const filteredStudents = students.filter(
               (stu) => stu.rollNo === rollNo && stu.course === courseSelected && stu.session === session
             );
-    
+            console.log("filtered student", filteredStudents)
             if (!isNaN(rollNo) && filteredStudents?.length > 0) {
-              // alert("Student Exist");
+              alert("Student Exist");
               renderTable(filteredStudents);
             } else if (isNaN(rollNo)) {
               renderTable();
