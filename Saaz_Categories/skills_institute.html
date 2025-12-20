@@ -59,35 +59,31 @@
      </select>
     </div>
     <div>
-    <select name="" id="course_selection"   class="p-2" onchange="getValue()">
-      <!-- <option value="">
-      <ul>
-        <li></li>
-      </ul>
-    </option> -->
-      <option value="Amazon">Amazon</option>
+      <input placeholder="Select Cource" list="cources" class="p-2" id="course_selection" onchange="getValue()"/>
+      <datalist id="cources">
+       <option value="Amazon" >Amazon</option>
       <option value="Web Development">Web Development</option>
       <option value="Diploma in Database Management">Diploma in Database Management</option>
       <option value="Python Developer">Python Developer</option>
       <option value="Software Skills">Software Skills</option>
       <option value="MS OFFICE MANAGEMENT">MS Office Management</option>
       <option value="Information Technology">Diploma Information Technology</option>
-      <option value="Digital Marketing">Digital Marketing</option>
       <option value="DIPLOMA IN IT">diploma In IT</option>
       <option value="Video Graphy">Video Graphy</option>
       <option value="Graphic Designer">Graphic Designing</option>
-      <option value="Auto Cad 2d/3d">Auto Cad 2d/3d</option>
+      <option value="Auto Cad">Auto Cad 2d/3d</option>
       <option value="shopify">Shopify</option>
       <option value="Free Lancing">Free Lancing</option>
       <option value="Video Graphy">Video Graphy</option>
       <option value="Diploma in Financial Management">Diploma in Financial Management</option>
-      <option value="E-Commerece">E-Commerece</option>
+      <option value="E-Commerce">E-Commerce</option>
       <option value="Ethical Hacking">Ethical Hacking</option>
       <option value="CCNA with Ethical Hacking">CCNA with Ethical Hacking</option>
       <option value="Desktop Application">Desktop Application</option>
       <option value="Amazon VA">Amazon VA</option>
       <option value="Android Development">Android Development</option>
       <option value="Diploma in Librarianship">Diploma in Librarianship</option>
+      <option value="Digital Marketing">Digital Marketing</option>
       <option value="IELTS">IELTS</option>
       <option value="Diploma in Technical Management">Diploma in Technical Management</option>
       <option value="Spoken English">Spoken English</option>
@@ -98,8 +94,7 @@
       <option value="Electronic Diploma">Electronic Diploma</option>
       <option value="Guest Posting">Guest Posting</option>
       <option value="Word Press">Word Press</option>
-
-     </select>
+      </datalist>
     </div>
     <div>
       <input
@@ -157,6 +152,18 @@
             <p class="text-dark" style="margin-top: -10px">( Full-Stack Website Developer )</p>
           </div>
           <div class="img_container p-2 text-center shadow">
+            <img src="../img/skills_Institute/staff/Engr.Muhammad_Ahmad.jpeg" alt="" style="height: 150px; width: 150px;">
+            <p class="mt-2 fw-bold text-dark">Engr. Muhammad Ahmad </p>
+            <p class="mt-2 fw-bold text-dark"></p>
+            <p class="text-dark" style="margin-top: -10px">Digital Marketing  & E-Commerce Specialist</p>
+          </div>
+          <div class="img_container p-2 text-center shadow">
+            <img src="../img/skills_Institute/staff/Muhammad_Naeem.jpeg" alt="" style="height: 150px; width: 150px;">
+            <p class="mt-2 fw-bold text-dark">Muhammad Naeem </p>
+            <p class="mt-2 fw-bold text-dark"></p>
+            <p class="text-dark" style="margin-top: -10px">Daraz and Shopify Specialist</p>
+          </div>
+          <div class="img_container p-2 text-center shadow">
             <img src="../img/skills_Institute/staff/abid_husain.jpg" alt="" style="height: 150px; width: 150px;">
             <p class="mt-2 fw-bold text-dark">Abid Husain</p>
             <p class="text-dark" style="margin-top: -10px">( Korean Language Specialist )</p>
@@ -182,16 +189,7 @@
             <p class="mt-2 fw-bold text-dark">Hashir Shahid</p>
             <p class="text-dark" style="margin-top: -10px">( Python & Crypto )</p>
           </div>
-          <div class="img_container p-2 text-center shadow">
-            <img src="../img/skills_Institute/staff/hafizah_Marya,.jpeg" alt="" style="height: 150px; width: 150px;">
-            <p class="mt-2 fw-bold text-dark">Hafizah Maryam</p>
-            <p class="text-dark" style="margin-top: -10px">( Digital Marketing & SEO )</p>
-          </div>
-          <div class="img_container p-2 text-center shadow">
-            <img src="../img/skills_Institute/staff/rajab.png" alt="" style="height: 150px; width: 150px;">
-            <p class="mt-2 fw-bold text-dark">Rajab</p>
-            <p class="text-dark" style="margin-top: -10px">( Amazon & Shopify Specialist )</p>
-          </div>
+          
           <div class="img_container p-2 text-center shadow">
             <img src="../img/skills_Institute/staff/chiness.jpg" alt="" style="height: 150px; width: 150px;">
             <p class="mt-2 fw-bold text-dark">Mr. Wang</p>
@@ -1071,12 +1069,12 @@ By understanding these future aspects, scope, and emerging trends, individuals c
   .then(res => res.json())
   .then(stud =>{
     students = stud.students;
-  console.log("stud",stud.students)
+  // console.log("stud",stud.students)
   
   }).catch(err=>console.log("fetch_Error",err));
   
         const getValue=()=>{
-           courseSelected = document.getElementById("course_selection").value;
+           courseSelected = document.getElementById("course_selection").value.toUpperCase();
            session = document.getElementById("Session").value;
           }
          
@@ -1096,22 +1094,22 @@ By understanding these future aspects, scope, and emerging trends, individuals c
           const findResult = (e) => {
             rollNo = parseInt(e.target.value);
           };
-          const getResult = () => {
-            const filteredStudents = students.filter(
-              (stu) => stu.rollNo === rollNo && stu.course === courseSelected && stu.session === session
-            );
-            console.log("filtered student", filteredStudents)
-            if (!isNaN(rollNo) && filteredStudents?.length > 0) {
-              alert("Student Exist");
-              renderTable(filteredStudents);
-            } else if (isNaN(rollNo)) {
-              renderTable();
-              alert("Please Enter Roll No");
-            } else {
-              alert("No Any Student With This Roll No");
-              table.innerHTML = `<tr><td>No Student Found</td></tr>`;
-            }
-          };
+      const getResult = () => {
+          const filteredStudents = students.filter(
+            (stu) => stu.rollNo === rollNo && stu.course === courseSelected && stu.session === session
+          );
+  
+          if (!isNaN(rollNo) && filteredStudents?.length > 0) {
+            // alert("Student Exist");
+            renderTable(filteredStudents);
+          } else if (isNaN(rollNo)) {
+            renderTable();
+            alert("Please Enter Roll No");
+          } else {
+            alert("No Any Student With This Roll No");
+            table.innerHTML = `<tr><td>No Student Found</td></tr>`;
+          }
+        };
           </script>
 
   <script>
