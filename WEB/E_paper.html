@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+body {
+  font-family:cursive;
+  width:100%;
+  max-width:500%;
+  margin:0;
+  padding:0px;
+  background-color:rgba(70,0,205,0.06);
+  }
+
+.head {
+    width:100%;
+	height:160px;
+	background-color:skyblue;
+	margin-top:20px;
+	}
+.head h2 {
+    color:black;
+	text-align:center;
+	align-items:center;
+	padding:-5px;
+	width:100%;
+	letter-spacing:20px;
+	font-size:50px;
+	
+	}
+.head_p{
+	 color:darkblue;
+	 font-size:40px;
+	margin-left:400px;
+	 position:absolute;
+	 margin-top:-20px;
+	 letter-spacing:2px;
+	 }
+.first_part {
+    height:60px;
+	width:40%;
+	border:9px solid darkblue;
+	}
+.second_part {
+    height:60px;
+	width:30%;
+	border:9px solid darkblue;
+	}
+.main {
+    display:flex; 
+	justify-content:center; 
+	margin-top:3px; 
+	width:98%; 
+	margin-left:10px;
+
+	}
+.main h2 a  {
+     color: #ff474c;
+	 text-decoration:none;
+     font-size:27px;
+	 margin-top:-10px;
+	 position:absolute;
+	 margin-left:200px;
+	}
+
+.main button {
+     height:40px;
+	 width:200px;
+	 border:3px solid #ff474c;;
+	 border-radius:25px;
+	 background-color:#ffd900;
+	 margin-left:150px;
+	 margin-top:10px;
+	}
+.main button a{
+    color:#ff474c;
+	text-decoration:none;
+	font-size:15px;
+	}
+footer {
+   width:100%;
+   height:500px;
+   background-color:#06141c;
+   }
+.info {
+    display:flex;
+    padding:70px;
+	}
+.info_text {
+  margin-left:170px;
+  width:270px;
+  }
+.info_text h2{
+      color:white;
+	  font-size:25px;
+	  }
+.info_text a p{
+	   color:white;
+	     transition: letter-spacing 0.1s ;
+	   font-size:20px;
+	   letter-spacing: 1px;
+	   }
+.info_text a {
+	    text-decoration:none; 
+		}
+.info_text p {
+    color:white;
+	}
+.info p{
+   line-height:1;
+   letter-spacing:1px;
+   }
+.info a p:hover{
+     letter-spacing:3px;
+	 }
+.list {
+     justify-content:center;
+	 height:90px;
+	 width:100%;
+	background-color:rgb(255,255,255);
+}
+.list ul{
+    display:flex;
+	list-style:none;
+	margin-top:25px;
+	
+	}
+.list ul li a{
+       text-decoration:none;
+	   color:black;
+	   margin-left:50px;
+	   font-size:19px;
+	   }
+.our_clients h1 {
+        font-size:70px;
+		text-align:center;
+		color:black;
+		}
+.our_clients { 
+    justify-content:center;
+	}
+.our_clients article{ 
+      margin:40px;
+	 }
+.client img{
+    border:3px solid white;
+	height:150px;
+	width:150px;
+	border-radius:50%;
+	padding:10px;
+	}
+.client {
+   display:flex;
+   margin-left:20px;
+   }
+.client article p{
+   font-size:19px;
+   text-align:center;
+   }
+.list img {
+    height:90px;
+	width:120px;
+	margin-left:60px;
+	}
+.list ul li a:hover {
+   text-decoration:underline;
+   }
+.premium1 {
+    height:60px;
+	width:670px;
+	background-color:darkblue;
+	border:1px solid transparent;
+	position:relative;
+	border-radius:30px;
+	margin-left:-150px;
+	margin-top:40px;
+	}
+.premium2 {
+    height:60px;
+	width:670px;
+	background-color:darkblue;
+	border:1px solid transparent;
+	border-radius:30px;
+	margin-left:-90px;
+	position:relative;
+	margin-top:10px;
+	}
+.premium3 {
+    height:60px;
+	width:670px;
+	background-color:darkblue;
+	border:1px solid transparent;
+	border-radius:30px;
+	margin-left:-30px;
+	position:relative;
+	margin-top:10px;
+	}
+.premium4 {
+    height:60px;
+	width:670px;
+	background-color:darkblue;
+	border:1px solid transparent;
+	margin-left:10px;
+	border-radius:30px;
+	position:relative;
+	margin-top:10px;
+	}
+.premium5 {
+    height:60px;
+	width:670px;
+	background-color:darkblue;
+	border:1px solid transparent;
+	margin-left:40px;
+	border-radius:30px;
+	margin-top:10px;
+	position:relative;
+	}
+.premium6 {
+    height:60px;
+	width:670px;
+	background-color:darkblue;
+	border:1px solid transparent;
+	margin-left:90px;
+	border-radius:30px;
+	margin-top:10px;
+	position:relative;
+	}
+.premium7 {
+    height:60px;
+	width:670px;
+	background-color:darkblue;
+	border:1px solid transparent;
+	margin-left:150px;
+	border-radius:30px;
+	margin-top:10px;
+	position:relative;
+	}
+.premiums p{
+   color:white;
+   font-size:22px;
+   position:relative;
+   margin-left:15px;
+   margin-top:15px;
+   }
+.our-pro {
+    height:90px;
+	width:80%;
+	margin-left:150px;
+	background-color:darkblue;
+	border:1px solid transparent;
+	border-radius:30px;
+
+	}
+.our-pro h1 {
+	 color:white;
+	 text-align:center;
+	 margin-top:0px;
+	 padding:0px;
+	 position:relative;
+	 font-size:60px;
+	 }
+
+.our_projects img{
+     border-radius:50%;
+	 border:1px solid darkblue;
+	 padding:10px;
+	 width:100px;
+	 height:100px;
+	 position:relative;
+	 margin-left:160px;
+	 }
+.our_projects {
+  display:flex;
+  gap:130px;
+  justify-content:center;
+  margin-top:50px;
+  }
+.article {
+   height:50px;
+   width:400px;
+   background-color:rgba(255,255,255,0.7);
+   border:1px dashed darkblue;
+   border-radius:20px;
+   position:relative;
+   margin-top:0px;
+   margin-left:30px;
+   }
+.vertical_line {
+    height:100px;
+	width:1px;
+	border-color:darkblue;
+	border-style:none dashed none none;
+	border-width:1px;
+	position:relative;
+	margin-left:220px;
+	
+	}
+.article p{
+    font-size:22px;
+	position:relative;
+	margin-top:10px;
+	text-align:center;
+	letter-spacing:1px;
+	}
+.hover_list ul {
+     display:block;
+	 position:absolute;
+	 margin-top:15px;
+	 paddding:0px;
+	 margin-left:26px;
+	 height:129px;
+	 width:150px;
+	 }
+.hover_list ul li{
+	 paddding:0px;
+	 margin-left:-100px;
+	 line-height:2.8;
+	 }
+.hover_list ul li a:hover{
+	 text-decoration:underline;
+	   }
+.hover_list {
+	 background-color:white;
+     display:none;
+	 height:430px;
+	 width:200px;
+	 position:absolute;
+	 z-index:3;
+}   
+.hover_li:hover 
+   .hover_list {
+       display:block;
+	   }
+	   
+.box {
+   height:400px;
+   width:300px;
+   background-color:rgba(255,255,255,0.89);
+   margin-left:30px;
+   border:1px solid transparent;
+   border-radius:30px;
+   }
+.box h2{
+   text-align:center;
+   color:#ff474c;
+   }
+.box p{
+   text-align:center;
+   font-size:20px;
+   }
+.box img{
+   height:150px;
+   width:300px;
+   padding:0px;
+   border-top-left-radius:30px;
+   border-top-right-radius:30px;
+   border:2px solid transparent;
+   position:relative;
+   }
+.slider {
+   display:flex;
+   animation:spin 25s infinite linear;
+   }
+.container{
+   margin:100px;
+   width:90%;
+   display:flex;
+   overflow-x:scroll;
+}
+
+.container::-webkit-scrollbar {
+    display:none;
+	}
+@keyframes spin {
+  from {translate:0;}
+  to {translate:-100%;}
+  }
+.line1 {
+  height:3px;
+  background-color:darkblue;
+  position:relative;
+  margin-left:40px;
+  margin-top:85px;
+  width:170px;
+  }
+.line2 {
+  height:3px;
+  width:250px;
+  background-color:darkblue;
+  position:relative;
+  margin-left:40px;
+  margin-top:10px;
+  padding:-100px;
+  }
+.line3 {
+  height:3px;
+  background-color:darkblue;
+  position:relative;
+  margin-top:90px;
+  margin-left:80px;
+  width:170px;
+  }
+.line4 {
+  height:3px;
+  width:250px;
+  background-color:darkblue;
+  position:relative;
+  margin-right:30px;
+  margin-top:10px;
+
+  }
+.our_clients_say { 
+     display:flex;
+     overflow-x:auto;
+     margin:100px;
+     width:90%;
+	}
+.our_clients_say::-webkit-scrollbar {
+   display:none;
+   }
+@keyframes spin {
+  from {translate:0;}
+  to   {translate:-100%;}
+}  
+.client_container  {  
+   display:flex;
+   animation: spin 20s infinite linear;
+   }
+.client_box  {  
+     height:359px;
+	 width:300px;
+	 border:1px solid whit;
+	 border-radius:20px;
+	 background-color:rgba(255,255,255,0.5);
+	 margin-left:20px;
+	 }
+.client_box img {
+    height:100px;
+	width:100px;
+	border-radius:50%;
+	border:1px solid white;
+	padding:10px;
+	position:relative;;
+	margin-left:90px;
+	margin-top:30px;
+	background-color:rgba(70,0,205,0.06);
+
+	}
+.client_box  h2, .client_box  p{
+	 text-align:center;
+	 }
+.bar {
+    width: 1600px; /* Or a specific fixed width */
+    white-space: nowrap; /* Prevents the text from wrapping to the next line */
+	background-color:black;
+	color:white;
+	height:60px;
+	font-size:25px;
+}
+.scroll_text {
+    display:inline-block;
+    padding-left: 100%; /* Starts the text off-screen to the right */
+    animation: mark 40s linear infinite; /* Adjust duration (15s) for speed */
+	margin-top:10px;
+}
+@keyframes mark {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        /* Moves the text to the left by its full width (or -100% if duplicated) */
+        transform: translateX(-100%);
+    }
+}
+
+.bar2 {
+    width: 1600px; /* Or a specific fixed width */
+    white-space: nowrap; /* Prevents the text from wrapping to the next line */
+	background-color:#ff474c;
+	color:black;
+	height:60px;
+	font-size:25px;
+}
+.scroll_text2 {
+    display:inline-block;
+    padding-left: 100%; /* Starts the text off-screen to the right */
+    animation: mark2 40s linear infinite; /* Adjust duration (15s) for speed */
+	margin-top:10px;
+}
+@keyframes mark2 {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        /* Moves the text to the left by its full width (or -100% if duplicated) */
+        transform: translateX(0);
+    }
+}
+.prem1 {
+    height:60px;
+	width:670px;
+	background-color:green;
+	border:1px solid transparent;
+	position:relative;
+	border-radius:30px;
+	margin-left:750px;
+	margin-top:40px;
+	}
+	.prem1 p{
+	margin-left:70px;
+	}
+.prem2 {
+    height:60px;
+	width:670px;
+	background-color:green;
+	border:1px solid transparent;
+	border-radius:30px;
+	margin-left:700px;
+	position:relative;
+	margin-top:10px;
+	}
+.prem2 p{
+	margin-left:270px;
+	}
+.prem3 {
+    height:60px;
+	width:670px;
+	background-color:green;
+	border:1px solid transparent;
+	border-radius:30px;
+	margin-left:650px;
+	position:relative;
+	margin-top:10px;
+	}
+.prem3 p{
+	margin-left:230px;
+	}
+.prem4 {
+    height:60px;
+	width:670px;
+	background-color:green;
+	border:1px solid transparent;
+	margin-left:600px;
+	border-radius:30px;
+	position:relative;
+	margin-top:10px;
+	}
+.prem4 p{
+	margin-left:400px;
+	}
+.prem5 {
+    height:60px;
+	width:670px;
+	background-color:green;
+	border:1px solid transparent;
+	margin-left:550px;
+	border-radius:30px;
+	margin-top:10px;
+	position:relative;
+	}
+.prem5 p{
+	margin-left:300px;
+	}
+.prem6 {
+    height:60px;
+	width:670px;
+	background-color:green;
+	border:1px solid transparent;
+	margin-left:500px;
+	border-radius:30px;
+	margin-top:10px;
+	position:relative;
+	}
+.prem6 p{
+	margin-left:300px;
+	}
+.prem7 {
+    height:60px;
+	width:670px;
+	background-color:green;
+	border:1px solid transparent;
+	margin-left:450px;
+	border-radius:30px;
+	margin-top:10px;
+	position:relative;
+	}
+.prem7 p{
+	margin-left:300px;
+	}
+.premiums2 p{
+   color:white;
+   font-size:29px;
+   position:relative;
+   margin-top:10px;
+   }
+</style>
+
+</head>
+<body>
+
+
+<div class="list">
+<div style="display:flex;">
+<img src="images/img4.png">
+<ul>
+   <li><a href="E_paper.html"><b>HOME</b></a></li>
+   <li><a href="about_us.html"><b>About Us</b></a></li>
+   <li><a href="#our_services"><b>Services</b></a></li>
+   <li><a href="#"><b>Blogs</b></a></li>
+   <li><a href="#our_clients_say"><b>Reviews</b></a></li>
+   <li><a href="Demo.html"><b>Demo</b></a></li>
+   <li><a href="#our-clients"><b>Our Clients</b></a></li>
+   <li><a href="#our_project"><b>Our Projects</b></a></li>
+   <li class="hover_li"><a><b>Downloads &#9660;</b></a>
+     <div class="hover_list">
+        <ul>
+		   <li><a href="#">Chapter Wise Test</a></li>
+		   <li><a href="#">Topic Wise Test</a></li>
+		   <li><a href="#">Exercise Test</a></li>
+		   <li><a href="#">Half Book Test</a></li>
+		   <li><a href="#">Full Book Test</a></li>
+		   <li><a href="#">Syllabus</a></li>
+		   <li><a href="#">Pre Classes Papers</a></li>
+		   <li><a href="#">Result Cards</a></li>
+       </ul>
+     </div>
+   </li>
+   <li><a href="contact.html"><b>Contact Us </b></a></li>
+</ul>
+</div>
+</div>
+
+
+
+
+<div class="border">
+
+ <div class="head">
+   <h2>E-Paper  Services  by  SAAZ</h2> 
+   <p class="head_p">(A Project of SAAZ Group Of Institute)</p>
+ </div> 
+
+ <h2 style="text-align:center; font-size:30px;">Now Get Rid of Papers Composing /ِ<span style="color:red"> اب پیپرز کمپوزنگ سے جان چھڑائیں۔</span></h2>
+
+ <div class="bar">
+   <p class="scroll_text">Get All Subjects Test in Urdu & English Medium With Your Institute Name & Monogram 
+   <span style="color:red; margin-left:10px;"> &#10004; Chapter Wise Tests </span>
+   <span style="color:skyblue; margin-left:20px;">&#10004; Topic Wise Tests</span>
+   <span style="color:green; margin-left:20px;">  &#10004; Exercise Tests</span>
+   <span style="color:yellow; margin-left:20px;">  &#10004; Half Book Test </span>
+   <span style="color:red; margin-left:20px;"> &#10004; Full Book Tests</span>
+   <span style="margin-left:20px;"> &#10004;(9th)</span>
+   <span style="margin-left:20px;"> &#10004;(10th)</span> 
+   <span style="margin-left:20px;"> &#10004;(1st year)</span>
+   <span style="margin-left:20px;">&#10004; (2nd year)</span> 
+   <span style="margin-left:20px;">&#10004;(Play grounp to 8th class)</span>
+   <span style="margin-left:20px;">&#10004; Syllabus</span>
+   <span style="margin-left:20px;">&#10004; Work Sheets</span>
+   <span style="margin-left:20px;">&#10004; Vacation works</span>
+   <span style="margin-left:20px;">&#10004; Tracing Books</span>
+   <span style="margin-left:20px;">&#10004; Study Patterns</span>
+   <span style="margin-left:20px;">&#10004; Result Cards</span>
+   <span style="margin-left:20px;">&#10004; Date Sheets</span>
+   <span style="margin-left:20px;">&#10004; Monthly Test Reports</span>
+   </p>
+ </div>
+<br>
+ <div class="bar2">
+   <p class="scroll_text2">تمام کلاسز کے ٹیسٹ اپنے ادارے کے نام اور مونوگرام کے ساتھ حاصل کریں  
+   <span style="color:white; margin-left:10px;"> &#10004; چپٹر وائز ٹیسٹ </span> 
+   <span style="color:navyblue; margin-left:20px;">&#10004; ٹاپک وائز ٹیسٹ</span>
+   <span style="color:green; margin-left:20px;">  &#10004; مشقی ٹیسٹ</span>
+   <span style="color:yellow; margin-left:20px;">  &#10004; ہالف بک ٹیسٹ </span>
+   <span style="color:black; margin-left:20px;"> &#10004; فل بک ٹیسٹ</span> 
+   <span style="margin-left:20px;">نویں</span> 
+   <span style="margin-left:20px;">دسویں</span>  
+   <span style="margin-left:20px;">گیارہویں</span>  
+   <span style="margin-left:20px;">بارہویں</span>  
+   <span style="margin-left:20px;"> پلے گروپ تا آٹھویں کلاس</span>
+   <span style="margin-left:20px;">&#10004; سلیبس</span>
+   <span style="margin-left:20px;">&#10004; ورک شیٹس</span>
+   <span style="margin-left:20px;">&#10004; وکیشن ورکس</span>
+   <span style="margin-left:20px;">&#10004; ٹریسنگ بکس</span>
+   <span style="margin-left:20px;">&#10004; سٹدی پیٹرنز</span>
+   <span style="margin-left:20px;">&#10004; رزلٹ کارڈز</span>
+   <span style="margin-left:20px;">&#10004; ڈیٹ شیٹ</span>
+   <span style="margin-left:20px;">&#10004; ماہانہ ٹیسٹ رپورٹس</span>
+   <span style="margin-left:20px;">&#10004; حل شدہ نوٹس حاصل کریں</span>
+   <span style="margin-left:20px;">&#10004; سلیبس ، بکس ، مضامین ، پیپرز ، نوٹس اپنے ادارے کے مونو گرام اور نام کے ساتھ حاصل کریں</span>
+   </p>
+ </div>
+
+<h1 style="text-align:center; font-size:50px;" id="sample_papers">Sample Papers</h1>
+
+ <div class="main">
+    <div class="first_part"><h2><a href="#">Chapter Wise Tests</a></h2></div>
+    <div class="second_part"><button><a href="#">Click Here to Download</a></button></div>
+ </div>
+ 
+  <div class="main">
+    <div class="first_part"><h2><a href="#">Topic Wise Tests</a></h2></div>
+    <div class="second_part"><button><a href="#">Click Here to Download</a></button></div>
+ </div>
+ 
+  <div class="main">
+    <div class="first_part"><h2><a href="#">Exercise Tests</a></h2></div>
+    <div class="second_part"><button><a href="#">Click Here to Download</a></button></div>
+ </div>
+ 
+  <div class="main">
+    <div class="first_part"><h2><a href="#">Half Book Tests</a></h2></div>
+    <div class="second_part"><button><a href="#">Click Here to Download</a></button></div>
+ </div>
+ 
+  <div class="main">
+    <div class="first_part"><h2><a href="simple.html">Full Book Tests</a></h2></div>
+    <div class="second_part"><button><a href="simple.html" Download>Click Here to Download</a></button></div>
+ </div>
+ 
+   <div class="main">
+    <div class="first_part"><h2><a href="simple.html">Syllabus</a></h2></div>
+    <div class="second_part"><button><a href="simple.html" Download>Click Here to Download</a></button></div>
+ </div>
+ 
+   <div class="main">
+    <div class="first_part"><h2><a href="simple.html">Pre classes papers</a></h2></div>
+    <div class="second_part"><button><a href="simple.html" Download>Click Here to Download</a></button></div>
+ </div>
+   <div class="main">
+    <div class="first_part"><h2><a href="simple.html">Result cards</a></h2></div>
+    <div class="second_part"><button><a href="simple.html" Download>Click Here to Download</a></button></div>
+ </div>
+ 
+</div>
+<br><br><br><br>
+
+
+
+<h1 style="text-align:center; font-size:40px;">Why Choose <span style="color:#ff474c;">E-Paper Services By SAAZ </span>for Customized <span style="color:#ff474c;">Typing</span> Service?</h1>
+<div style="display:flex; justify-content:center;">
+ <div class="premiums">
+  <div class="premium1"><p>&check;  Pakistan's No.1 Paper Typing Services at affordable Rates</p></div>
+  <div class="premium2"><p>&check; Free revisions for full satisfaction</p></div>
+  <div class="premium3"><p>&check; High-quality, plagiarism-free papers</p></div>
+  <div class="premium4"><p>&check; On-time delivery, every time</p></div>
+  <div class="premium5"><p>&check; Experienced and professional writers</p></div>
+  <div class="premium6"><p>&check; Affordale and transparent pricing</p></div>
+  <div class="premium7"><p>&check; Complete confidentiality guaranted</p></div>
+ </div>
+ <img src="images/img.jpg" height="400" width="400" style="margin-left:50px; margin-top:50px; position:relative; border:6px solid black;">
+</div>
+
+<br><br>
+
+<div style="display:flex; justify-content:center;">
+  <img src="capture.png" height="400" width="400" style="position:absolute; margin-left:-950px; margin-top:50px; border:6px solid black;">
+ <div class="premiums2">
+  <div class="prem1"><p>مناسب قیمتوں پر پاکستان کی نمبر 1 پیپر ٹائپنگ سروسز &check;</p></div>
+  <div class="prem2"><p>مکمل اطمینان کے لیے مفت نظرثانی  &check; </p></div>
+  <div class="prem3"><p>اعلیٰ معیار کے، سرقہ سے پاک کاغذات &check; </p></div>
+  <div class="prem4"><p>وقت کی ترسیل ، ہر بار  &check;</p></div>
+  <div class="prem5"><p>تجربہ کار اور پیشہ ور مصنفین  &check;</p></div>
+  <div class="prem6"><p>سستی اور شفاف قیمتوں کا تعین &check;</p></div>
+  <div class="prem7"><p> مکمل رازداری کی ضمانت ہے۔ &check;</p></div>
+ </div>
+</div>
+
+
+<br><br>
+
+<div class="our-pro"><h1 id="our_project">Our Projects</h1></div>
+
+<div class="our_projects">
+   <article>
+   <img src="images/pro1.png">
+   <div class="vertical_line"></div>
+      <div class="article"><p>Aiou Services By SAAZ</p></div>
+	  
+   </article >
+   
+   
+   <article>
+   <img src="images/pro2.png">
+   <div class="vertical_line"></div>
+      <div class="article"><p>Chef tech By SAAZ</p></div>
+     
+   </article>
+   
+   
+   <article>
+   <img src="images/pro3.png">
+   <div class="vertical_line"></div>
+      <div class="article"><p>Edu Solutions By SAAZ</p></div>
+   
+   </article>
+   
+</div>
+<div class="our_projects">
+   <article>
+   <img src="images/pro4.png">
+   <div class="vertical_line"></div>
+      <div class="article"><p>Graphic Services By SAAZ</p></div>
+   
+   </article>
+   <article>
+   <img src="images/pro5.png">
+   <div class="vertical_line"></div>
+      <div class="article"><p>Pharmseutical Solutions By SAAZ</p></div>
+   
+   </article>
+   <article>
+   <img src="images/pro6.png">
+   <div class="vertical_line"></div>
+      <div class="article"><p>SAAZ Publications</p></div>
+   
+   </article>
+</div>
+<div class="our_projects">
+     <article>
+   <img src="images/pro7.png">
+   <div class="vertical_line"></div>
+      <div class="article"><p>WEB Design Services By SAAZ</p></div>
+   </div>
+   </article>
+<br><br><br><br>
+
+<h1 style="text-align:center; font-size:60px;" id="our_services">Our <span style="color:#ff474c;">Premium Services</span></h1>
+<div class="container">
+ <div class="slider">
+ 
+  <div class="box">
+     <img src="images/academic.jpg">
+    <h2>Academic Writting Services</h2>
+	<p>High Quality Assignments,<br>
+	essays, research papers and<br>
+	thesis written with accuracy<br>
+	and researh. </p>
+  </div>
+  
+    <div class="box">
+     <img src="images/business.jpg">
+    <h2>Official & Business Documents</h2>
+	<p>Professional reports,<br> proposals,
+	and business documents tailored to<br>
+	your need.</p>
+  </div>
+  
+    <div class="box">
+     <img src="images/legal.jpg">
+    <h2>Legal & Official Documents</h2>
+	<p>Well-structured <br>applications,
+	agreements, and <br>official letters
+	prepared  <br>professionally</p>
+  </div>
+  
+    <div class="box">
+     <img src="images/cv.jpg">
+    <h2>CV / Resume & Cover Letter Writting</h2>
+	<p>Modern, ATS-friendly<br>
+	CVs and compelling cover<br>
+	letters to boost your <br>
+	career</p>
+  </div>
+ 
+      <div class="box">
+     <img src="images/editing.jpg">
+    <h2>Editing & Proofreading Services</h2>
+	<p>Grammar, clarity, and<br>
+	formatting improved to<br>
+	ensure prefection.</p>
+  </div>
+  
+      <div class="box">
+     <img src="images/format.jpg">
+    <h2>Plagiarism Removal & Formatting</h2>
+	<p>Plagiarism-free content<br>
+	with proper formattung as <br>
+	per guidelines 100%.</p>
+  </div>
+  
+      <div class="box">
+     <img src="images/powerpoint.png">
+    <h2>PowerPoint <br>Presentation</h2>
+	<p>Visually appealing and <br>
+	professional presentation <br>
+	for  academic and business <br>
+	use.</p>
+  </div>
+  
+      <div class="box">
+     <img src="images/paper.jpg">
+    <h2>Customized Paper Services</h2>
+	<p>Fully customized papers<br>
+	designed according to your <br>
+	specific requirments.</p>
+  </div>
+ </div>
+ <div aria-hidden class="slider">
+ 
+  <div class="box">
+     <img src="images/academic.jpg">
+    <h2>Academic Writting Services</h2>
+	<p>High Quality Assignments,<br>
+	essays, research papers and<br>
+	thesis written with accuracy<br>
+	and researh. </p>
+  </div>
+  
+    <div class="box">
+     <img src="images/business.jpg">
+    <h2>Official & Business Documents</h2>
+	<p>Professional reports,<br> proposals,
+	and business documents tailored to<br>
+	your need.</p>
+  </div>
+  
+    <div class="box">
+     <img src="images/legal.jpg">
+    <h2>Legal & Official Documents</h2>
+	<p>Well-structured <br>applications,
+	agreements, and <br>official letters
+	prepared  <br>professionally</p>
+  </div>
+  
+    <div class="box">
+     <img src="images/cv.jpg">
+    <h2>CV / Resume & Cover Letter Writting</h2>
+	<p>Modern, ATS-friendly<br>
+	CVs and compelling cover<br>
+	letters to boost your <br>
+	career</p>
+  </div>
+ 
+      <div class="box">
+     <img src="images/editing.jpg">
+    <h2>Editing & Proofreading Services</h2>
+	<p>Grammar, clarity, and<br>
+	formatting improved to<br>
+	ensure prefection.</p>
+  </div>
+  
+      <div class="box">
+     <img src="images/format.jpg">
+    <h2>Plagiarism Removal & Formatting</h2>
+	<p>Plagiarism-free content<br>
+	with proper formattung as <br>
+	per guidelines 100%.</p>
+  </div>
+  
+      <div class="box">
+     <img src="images/powerpoint.png">
+    <h2>PowerPoint <br>Presentation</h2>
+	<p>Visually appealing and <br>
+	professional presentation <br>
+	for  academic and business <br>
+	use.</p>
+  </div>
+  
+      <div class="box">
+     <img src="images/paper.jpg">
+    <h2>Customized Paper Services</h2>
+	<p>Fully customized papers<br>
+	designed according to your <br>
+	specific requirments.</p>
+  </div>
+
+</div>
+</div>
+<br><br><br><br>
+
+<div class="our_clients">
+<h1 id="our-clients">Our Clients </h1>
+ <div class="client">
+   <article><img src="images/client1.jpg">
+   <p>RAZA Grammer <br>School</p>
+   </article>
+   
+   
+   <article><img src="images/client2.jpg">
+   <p>BAB-UL-ILM Grammer <br>School</p>
+   </article>
+   
+   
+   <article><img src="images/client3.jpg">
+   <p>Iqbal Model High <br>School</p>
+   </article>
+
+   <article><img src="images/zemm.png" >
+   <p>ZEMM Study <br>Solutions</p>
+   </article>
+   
+    <article><img src="images/saaz_school.jpg" >
+   <p>SAAZ School <br>System</p>
+   </article>
+   
+
+ </div>
+</div>
+<br><br><br><br><br>
+
+
+
+
+<div style="display:flex; justify-content:center;">
+	 <div style="display:inline-block;">
+	    <div class="line3"></div>
+	    <div class="line4"></div>
+	 </div>
+ <h2 id="our_clients_say" style="text-align:center; font-size:50px; letter-spacing:2px; margin-top:50px;">Our Clients Say...</h2>
+	 <div style="display:flex; flex-direction:column;">
+	    <div class="line1"></div>
+	    <div class="line2"></div>
+	 </div>
+</div>
+
+<div class="our_clients_say">
+
+<div class="client_container">
+
+<div class="client_box">
+  <img src="images/profile_icon.png">
+ <h2>Client Name..</h2>
+ <p>Client Comments</p>
+</div>
+
+<div class="client_box">
+  <img src="images/profile_icon.png">
+ <h2>Client Name..</h2>
+ <p>Client Comments</p>
+</div>
+
+<div class="client_box">
+  <img src="images/profile_icon.png">
+ <h2>Client Name..</h2>
+ <p>Client Comments</p>
+</div>
+
+<div class="client_box">
+  <img src="images/profile_icon.png">
+ <h2>Client Name..</h2>
+ <p>Client Comments</p>
+</div>
+
+<div class="client_box">
+  <img src="images/profile_icon.png">
+ <h2>Client Name..</h2>
+ <p>Client Comments</p>
+</div>
+
+<div class="client_box">
+  <img src="images/profile_icon.png">
+ <h2>Client Name..</h2>
+ <p>Client Comments</p>
+</div>
+</div>
+
+<div class="client_container">
+
+<div class="client_box">
+  <img src="images/profile_icon.png">
+ <h2>Client Name..</h2>
+ <p>Client Comments</p>
+</div>
+
+<div class="client_box">
+  <img src="images/profile_icon.png">
+ <h2>Client Name..</h2>
+ <p>Client Comments</p>
+</div>
+
+<div class="client_box">
+  <img src="images/profile_icon.png">
+ <h2>Client Name..</h2>
+ <p>Client Comments</p>
+</div>
+
+<div class="client_box">
+  <img src="images/profile_icon.png">
+ <h2>Client Name..</h2>
+ <p>Client Comments</p>
+</div>
+
+<div class="client_box">
+  <img src="images/profile_icon.png">
+ <h2>Client Name..</h2>
+ <p>Client Comments</p>
+</div>
+
+<div class="client_box">
+  <img src="images/profile_icon.png">
+ <h2>Client Name..</h2>
+ <p>Client Comments</p>
+</div>
+
+
+</div>
+</div>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<footer>
+<div class="info">
+   <div class="info_text">
+     <h2>Quick Link</h1>
+       <a href="about us.html" target="_blank"><p>About Us</p></a>
+       <a href="#sample_papers"><p>Sample Papers</p></a>
+       <a href="#our_projects"><p>Our Projects</p></a>
+       <a href="#our_services"><p>Our Services</p></a>
+       <a href="contact.html" target="_blank"><p>Contact</p></a>
+   </div>
+   
+   
+   <div class="info_text">
+     <h2>Contact Info</h2>
+	 <p style="line-height:1.5">371-C Chandni Chowk Ghullam <br>
+	 Muhammad Abad Faisalabad, Pakistan</p>
+	 <p style="color:white; text-decoration:none;">+92 327 6339 101</p>
+   </div>
+   
+   
+   <div class="info_text">
+     <h2>For Query Email Us</h2>
+	 <a href="#"><p>saazepaper@gmail.com</p></a>
+   </div>
+   
+</div>
+</footer>
+</body>
+</html>

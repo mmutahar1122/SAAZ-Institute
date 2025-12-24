@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+* {
+  margin:0px;
+  padding:0px;
+  font-family:sans-serif;
+  }
+body {
+     background-color:rgba(255,215,0,0.1);
+	 font-family:cursive;
+	 }
+.list {
+	height:90px;
+	width:100%;
+	background-color:rgb(255,255,255);
+    position:fixed;
+	z-index:2;
+
+}
+.list ul{
+    display:flex;
+	list-style:none;
+	margin-top:25px;
+	
+	}
+.list ul li a{
+       text-decoration:none;
+	   color:black;
+	   margin-left:50px;
+	   font-size:19px;
+	   }
+.list img {
+    height:90px;
+	width:120px;
+	margin-left:60px;
+	}
+.list ul li a:hover {
+   text-decoration:underline;
+   }
+.hover_list ul {
+     display:block;
+	 position:absolute;
+	 margin-top:15px;
+	 paddding:0px;
+	 margin-left:26px;
+	 height:129px;
+	 width:150px;
+	 }
+.hover_list ul li{
+	 paddding:0px;
+	 margin-left:-70px;
+	 line-height:2.8;
+	 }
+.hover_list ul li a:hover{
+	 text-decoration:underline;
+	   }
+.hover_list {
+	 background-color:white;
+     display:none;
+	 height:430px;
+	 width:200px;
+}   
+.hover_li:hover 
+   .hover_list {
+       display:block;
+	   }
+.form {
+    height:500px;
+	width:800px;
+	border:1px solid transparent;
+	background-color:white;
+	border-radius:20px;
+	margin:170px;
+	margin-left:-570px;
+	position:absolute;
+	box-shadow:-5px -5px 50px rgba(255,215,0,0.2);
+	}
+.demo {
+  display:flex;
+  justify-content:center;
+  }
+.rect {
+  height:200px;
+  width:470px;
+  background-color:rgb(255,215,0);
+  border:1px solid transparent;
+  border-radius:12px;
+  margin-top:350px;
+  margin-left:820px;
+  position:absolute;
+  }
+.rect img{
+      height:260px;
+      width:440px;
+	  border-radius:30px;
+	  margin-top:-100px;
+	  margin-left:15px;
+	  }
+.form input {
+       width:300px;
+	   height:37px;
+	   border-radius:5px;
+	   border:1.5px solid lightgray;
+	   outline:none;
+	   font-size:20px;
+	   letter-spacing:1px;
+	   padding-left:20px;
+	   }
+#input_label {
+   position:absolute;
+   margin-left:-290px;
+   color:gray;
+   margin-top:10px;
+   letter-spacing:1px;
+   transition:0.2s;
+   background-color:white;
+   }
+#message {
+    height:100px;
+	width:640px;
+	margin-left:40px;
+	margin-top:40px;
+	}
+.form input:focus {
+      border:2.5px solid rgb(255,215,0);
+	  }
+#name:focus + #input_label  {
+         color:rgb(255,215,0);
+	     margin-left:-315px;
+		 margin-top:-8px;
+	  }
+.message_label {
+    color:gray;
+	margin-left:-640px;
+    position:absolute;
+    letter-spacing:1px;
+	margin-top:55px;
+    transition:0.2s;
+    background-color:white;
+   }
+   
+#message:focus + .message_label {
+      color:rgb(255,215,0);
+	  margin-top:30px;
+	  margin-left:-650px;
+	  }
+.form button {
+      height:45px;
+	  width:660px;
+	  background-color:rgb(255,215,0);
+	  border:none;	
+	  margin-left:40px;
+      margin-top:25px;
+	  font-size:25px;
+	  border-radius:8px;
+	  }
+.form button a{
+	  color:white;
+      text-decoration:none;
+	  }
+
+</style>
+</head>
+<body>
+
+<div class="list">
+<div style="display:flex;">
+<img src="images/img4.png">
+<ul>
+   <li><a href="E_paper.html"><b>HOME</b></a></li>
+   <li><a href="about_us.html"><b>About Us</b></a></li>
+   <li><a href="#"><b>Services</b></a></li>
+   <li><a href="#"><b>Blogs</b></a></li>
+   <li><a href="#our_clients_say"><b>Reviews</b></a></li>
+   <li><a href="Demo.html"><b>Demo</b></a></li>
+   <li><a href="#our-clients"><b>Our Clients</b></a></li>
+   <li><a href="#our_project"><b>Our Projects</b></a></li>
+   <li class="hover_li"><a><b>Downloads &#9660;</b></a>
+     <div class="hover_list">
+        <ul>
+		   <li><a href="#">Chapter Wise Test</a></li>
+		   <li><a href="#">Topic Wise Test</a></li>
+		   <li><a href="#">Exercise Test</a></li>
+		   <li><a href="#">Half Book Test</a></li>
+		   <li><a href="#">Full Book Test</a></li>
+		   <li><a href="#">Syllabus</a></li>
+		   <li><a href="#">Pre Classes Papers</a></li>
+		   <li><a href="#">Result Cards</a></li>
+       </ul>
+     </div>
+   </li>
+   <li><a href="contact.html"><b>Contact Us </b></a></li>
+</ul>
+</div>
+</div>
+
+<div class="demo">
+<div class="form">
+
+<div style="display:flex; margin-top:40px;">
+
+<div style="margin-left:40px; margin-right:20px;">
+ <input type="text" id="name" autocomplete="off">
+ <label id="input_label">Name</label>
+</div>
+
+
+<div>
+ <input type="text" id="name" autocomplete="off">
+ <label id="input_label">City</label>
+</div>
+ 
+ </div>
+ 
+<div style="display:flex; margin-top:40px;">
+
+<div style="margin-left:40px; margin-right:20px;">
+ <input type="text" id="name" autocomplete="off">
+ <label id="input_label">Institute name</label>
+</div>
+
+
+<div>
+ <input type="text" id="name" autocomplete="off">
+ <label id="input_label">Phone Number</label>
+</div>
+ 
+ </div>
+ 
+ <div style="display:flex; margin-top:40px;">
+
+<div style="margin-left:40px; margin-right:20px;">
+ <input type="text" id="name" autocomplete="off">
+ <label id="input_label">Designation</label>
+</div>
+
+
+<div>
+ <input type="text" id="name" autocomplete="off">
+ <label id="input_label">No of Students</label>
+</div>
+ 
+ </div>
+ 
+ <input type="text" id="message" autocomplete="off">
+ <label class="message_label">Message</label><br>
+ 
+<button><a href="#">Submit</a></button>
+</div>
+
+<div class="rect"><img src="images/demo.png"></div>
+
+</div>
+
+</body>
+</html>
